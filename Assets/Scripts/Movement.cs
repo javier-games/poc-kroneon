@@ -6,7 +6,7 @@ namespace Kroneon.Li{
 	[RequireComponent(typeof(CapsuleCollider))]
 	[RequireComponent(typeof(Animator))]
 
-	public class LiMovement : MonoBehaviour
+	public class Movement : MonoBehaviour
 	{
 
 		[SerializeField] float spd_limit_low = 180;
@@ -65,6 +65,7 @@ namespace Kroneon.Li{
 
 			// Check if Li is Grounded
 			CheckGroundStatus();
+
 			/*TODO
 			 * 
 			 *  Space for change the speed of Li while Climb, Unclimb and No Climb
@@ -99,6 +100,13 @@ namespace Kroneon.Li{
 			// Helper to visualise the ground check ray in the scene view
 			Debug.DrawLine(transform.position + (Vector3.up * 0.1f), transform.position + (Vector3.up * 0.1f) + (Vector3.down * m_GroundCheckDistance));
 			#endif
+
+			/*	TODO
+			 * 
+			 *	We need to put more raycast (maybe) to eliminate the error as follows:
+			 *	When the character is located over an obstacle an it is exctly over the edge the character came into the Airbone position.
+			 *
+			*/
 
 			// Check if Li is Grounded with a Raycast.
 			// The origin of Li Chararter have to be at the bottom of Li.

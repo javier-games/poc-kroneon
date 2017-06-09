@@ -6,7 +6,7 @@ namespace Kroneon.Li{
 
 	// This is an action in an specific time
 
-	public class LiAction{
+	public class Action{
 
 		// Variables
 		private Vector3 dir ;		// Stores the control of direction that was did it by Li 
@@ -16,7 +16,7 @@ namespace Kroneon.Li{
 		private bool 	jump;		// Stores the control of jump that was did it by Li
 
 		// Constructor
-		public LiAction(Vector3 dir, Vector3 pos, float time, bool hold, bool jump){
+		public Action(Vector3 dir, Vector3 pos, float time, bool hold, bool jump){
 			//Initialization
 			this.dir  = dir ;
 			this.pos  = pos ;
