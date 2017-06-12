@@ -23,16 +23,28 @@ namespace Kroneon.Li{
 
 		// Get Methods
 		public Action GetAction(){
-			return actionList [i];
+			if ( i < actionList.Count )
+				return actionList [i];
+			else
+				return actionList [actionList.Count-1];
 		}
 		public Action GetAction(int i){
-			return actionList [i];
+			if ( i < actionList.Count )
+				return actionList [i];
+			else
+				return actionList [actionList.Count-1];
 		}
 		public float GetTime(){
-			return actionList [i].GetTime ();
+			if (i < actionList.Count)
+				return actionList [i].GetTime ();
+			else
+				return actionList [actionList.Count - 1].GetTime ();
 		}
 		public float GetTime( int i){
-			return actionList[i].GetTime ();
+			if (i < actionList.Count)
+				return actionList [i].GetTime ();
+			else
+				return actionList [actionList.Count - 1].GetTime ();
 		}
 		public float GetFinalTime(){
 			return time_f;
@@ -63,22 +75,29 @@ namespace Kroneon.Li{
 
 		// Update Methods
 		public void TimeUpdate( float time_r){
-
-			// Update in "Real Time"
-			//Debug.Log ("T="+t_current+"   FT="+GetFinalTime ()+"   T-FT="+(t_current - GetFinalTime ())+"   Ti="+GetTime (i)+"   Ti+1="+GetTime (i+1));
-
-			if (	(time_r - time_f) > GetTime(i)	) {
-				i++;
-				if (!((time_r - time_f) < GetTime (i+1)))
-					i += 2;
+			if (i < actionList.Count) {
+				if ((time_r - time_f) > GetTime (i)) {
+					i++;
+					if (!((time_r - time_f) < GetTime (i + 1)))
+						i += 2;
+				}
 			}
 		}
 		public void PositionUpdate( Movement past ){
-			past.gameObject.GetComponent<Transform>().position = actionList [i].GetPosition ();
+			if( i < actionList.Count )
+				past.gameObject.GetComponent<Transform>().position = actionList [i].GetPosition ();
+			else {
+				past.gameObject.GetComponent<Transform>().position = actionList [actionList.Count-1].GetPosition ();
+			}
 		}
 		public void PositionUpdate( GameObject past ){
-			past.GetComponent<Transform>().position = actionList [i].GetPosition ();
+			if( i < actionList.Count )
+				past.GetComponent<Transform>().position = actionList [i].GetPosition ();
+			else {
+				past.GetComponent<Transform>().position = actionList [actionList.Count-1].GetPosition ();
+			}
 		}
+
 
 	}
 }
