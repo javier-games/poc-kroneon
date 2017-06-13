@@ -4,18 +4,18 @@ using System;
 
 namespace Kroneon.Li{
 
-	// This is an action in an specific time
+	//	This is an action in an specific time
 
 	public class Action{
 
-		// Variables
+		//	Variables
 		private Vector3 dir ;		// Stores the control of direction that was did it by Li 
 		private Vector3 pos ;		// Stores the position of the action
 		private float	time;		// The moment in time when Li did the action
 		private bool 	hold;		// Stores the control of hold that was did it by Li  
 		private bool 	jump;		// Stores the control of jump that was did it by Li
 
-		// Constructor
+		//	Constructor
 		public Action(Vector3 dir, Vector3 pos, float time, bool hold, bool jump){
 			//Initialization
 			this.dir  = dir ;
@@ -25,7 +25,7 @@ namespace Kroneon.Li{
 			this.time = time;
 		}
 
-		// Get Methods
+		//	Get Methods
 		public Vector3 GetDirection(){
 			return dir;
 		}
