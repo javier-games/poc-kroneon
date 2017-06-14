@@ -7,8 +7,7 @@ namespace Kroneon.Li{
 	//This is a list of actions that represent a travel
 
 	public class Travel{
-
-
+		
 		//Variables
 		private List<Action> 	actionList;		// List to store actions
 		//private float  			time_f = 0;		// Total time of the travel
@@ -31,6 +30,9 @@ namespace Kroneon.Li{
 		//	Return the time of the index action
 		public float GetTime( int index){
 			return ended ? actionList [count-1].GetTime() : actionList [index].GetTime ();
+		}
+		public bool Ended(){
+			return ended;
 		}
 
 
