@@ -13,10 +13,12 @@ public class TimeMachine : MonoBehaviour {
 
 	//	Time Travel Variables
 	private List<Travel> travelList;					//	List of the travels
-	private List<GameObject> formerList;					//	List of formers
-	private int index = 0;
+	private List<GameObject> formerList;				//	List of formers
+	private int index = 0;								//	Index of travels
 	private float time_i = 0;							//	Initial time of the play process
 	private float time_c = 0;							//	Current time
+	[SerializeField]
+	private float delay = 5;							//	Delay per time travel
 
 	//	Trigger Variables
 	private bool travellerInside = true;				//	Flag with initial value.
@@ -40,9 +42,9 @@ public class TimeMachine : MonoBehaviour {
 		//	Update the current time
 		time_c = Time.time - time_i;
 		//	Stop 
-		if (travelNum > 0) {
+		if (travelNum > 0 && time_c > delay ) {
 			//	Update the current time
-			travelList [index].AddAction (dir, pos, time_c, hold, jump);
+			travelList [index].AddAction (dir, pos, time_c-delay, hold, jump);
 		}
 	}
 	//	Move a prefab crontrolled by the time in previous lists
@@ -69,15 +71,15 @@ public class TimeMachine : MonoBehaviour {
 		//	End the current travel and add a new one
 		travelList [index].EndTravel ();
 		travelList.Add (new Travel ());
-		//	Generating a new former
-		GameObject former = (GameObject)Instantiate (formerPrefab, transform.position, transform.rotation);
-		formerList.Add (former);
-		//	Increassing the index
-		index++;
 		//	Back in Time
 		ResetTravels ();
 		time_i = Time.time;
 		travelNum --;
+		//	Generating a new former
+		GameObject former = (GameObject)Instantiate (formerPrefab, travelList[index].GetAction().GetPosition(), transform.rotation);
+		formerList.Add (former);
+		//	Increassing the index
+		index++;
 	}
 	// Reset all the travels
 	private void ResetTravels(){
@@ -93,7 +95,7 @@ public class TimeMachine : MonoBehaviour {
 	//	Trigger Methods
 	void OnTriggerEnter(Collider other){
 		//	If the traveller has enter he is going to travel in time
-		if ( !travellerInside && other.gameObject == traveller ) {
+		if ( !travellerInside && other.gameObject == traveller && time_c > delay ) {
 			travellerInside = true;
 			if(travelNum>0)
 				TimeTravel ();

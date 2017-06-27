@@ -10,10 +10,9 @@ namespace Kroneon.Li{
 		
 		//Variables
 		private List<Action> 	actionList;		// List to store actions
-		//private float  			time_f = 0;		// Total time of the travel
 		private int 			index  = 0;		// Index of the current time
 		private	int				count  = 0;		// Count of actions in the list
-		private bool			ended  = false;	// 
+		private bool			ended  = false;	//
 
 
 		// Constructor - Initialization
