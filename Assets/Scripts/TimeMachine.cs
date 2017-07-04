@@ -28,6 +28,7 @@ public class TimeMachine : MonoBehaviour {
 
 	private List<Travel> travelList;						//	List of the travels
 	private List<GameObject> formerList;					//	List of formers
+	private List<bool> enableList;
 	private int index = 0;									//	Index of travels
 	private float time_i = 0;								//	Initial time of the play process
 	private float time_c = 0;								//	Current time
@@ -45,6 +46,7 @@ public class TimeMachine : MonoBehaviour {
 		travelList.Add (new Travel());
 
 		formerList = new List<GameObject>();
+		enableList = new List<bool> ();
 
 		time_i = Time.time;
 
@@ -54,6 +56,7 @@ public class TimeMachine : MonoBehaviour {
 		// Level
 		levelTime.fillAmount = 0;
 		levelWaitTime.fillAmount = 0;
+
 
 	}
 
@@ -85,21 +88,26 @@ public class TimeMachine : MonoBehaviour {
 
 		if (traveling) {
 			for ( int i = 0; i <= index && traveling; i++) {
-				if (!travelList[i].DidTimeTravelFinished()) {
-					if (travelList [i].AdjustTimeReverse (time_c)) {
+				if (travelList [i].AdjustTimeReverse (time_c)) {
+					if (enableList [i]) {
 						travelList [i].AdjustPosition (formerList [i]);
 						Action aux = travelList [i].GetAction ();
 						formerList [i].GetComponent<Movement> ().Move (aux.GetDirection (), aux.GetHold (), aux.GetJump ());
-					} else if (index == i) {
-						EndTimeTravel ();
+					} else {
+						if (travelList [i].IsEnable ()) {
+							enableList [i] = true;
+							Enable (formerList [i]);
+						}
 					}
-				} else {
-					
+
+				} else if (index == i) {
+					EndTimeTravel ();
 				}
+
 			}
 		} else {
 			for (int i = 0; i < index; i++) {
-				if (!travelList [i].DidTimeTravelFinished ()) {
+				if (enableList [i]) {
 					if (travelList [i].AdjustTime (time_c)) {
 						travelList [i].AdjustPosition (formerList [i]);
 						Action aux = travelList [i].GetAction ();
@@ -114,8 +122,9 @@ public class TimeMachine : MonoBehaviour {
 							false,
 							false
 						);
-						travelList [i].SetDisableTime (time_c);
 					}
+				} else {
+					travelList [i].AddNullAction (transform.position,time_c);
 				}
 			}
 		}
@@ -141,6 +150,7 @@ public class TimeMachine : MonoBehaviour {
 			Quaternion.FromToRotation(Vector3.forward,temp.GetDirection())
 		);
 		formerList.Add (former);
+		enableList.Add (true);
 
 		traveling = true;
 		for (int i = 0; i <= index; i++) {
@@ -205,9 +215,8 @@ public class TimeMachine : MonoBehaviour {
 		if (other.tag == "Respawn")
 			for (int i = 0; i < index; i++)
 				if (travelList [i].Ended ()) {
-
+					enableList [i] = false;
 					Disable (formerList [i]);
-					travelList [i].SetDisableTime (time_c);
 				}
 	}
 	void OnTriggerExit(Collider other){
@@ -215,247 +224,5 @@ public class TimeMachine : MonoBehaviour {
 		if( travellerInside && other.gameObject == traveller )
 			travellerInside = false;
 	}
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-[RequireComponent(typeof(BoxCollider))]
-public class TimeMachine : MonoBehaviour {
-
-
-	[SerializeField] private GameObject	traveller;		//	The current character with movemoent
-	[SerializeField] private GameObject	formerPrefab;	//	Prefab of the traveller
-	[SerializeField] private int 		travelNum = 3;	//	Initial total times of the level.
-
-	//	Time Travel Variables
-	private List<Travel> travelList;					//	List of the travels
-	private List<GameObject> formerList;				//	List of formers
-	private int index = 0;								//	Index of travels
-	private float time_i = 0;							//	Initial time of the play process
-	private float time_c = 0;							//	Current time
-	[SerializeField]
-	private float delay = 5;							//	Delay per time travel
-	private bool traveling = false;						//	Flag for timetravel
-
-	//	Trigger Variables
-	private bool travellerInside = true;				//	Flag for eneable animation backwards
-
-
-	//	Use this for initialization
-	void Start () {
-		//	Creatinhg a new list with a travel in it
-		travelList = new List<Travel> ();
-		travelList.Add (new Travel());
-		//	Creating a new list for the formers
-		formerList = new List<GameObject>();
-		//	Getting the initial time
-		time_i = Time.time;
-	}
-
-
-	//Public Methods
-	//	 Add a new action to the current travel
-	public void AddAction( Vector3 dir, Vector3 pos, bool hold, bool jump){
-		//	If traveller and the machibe are not traveling.
-		if (!traveling) {
-			//	Stop 
-			if (travelNum > 0 && time_c > delay) {
-				//	Update the current time
-				travelList [index].AddAction (dir, pos, time_c - delay, hold, jump);
-			}
-		}
-	}
-	//	Move a prefab crontrolled by the time in previous lists
-	public void Move (){
 		
-		//	Update the current time
-		time_c = Time.time - time_i;
-
-		//	If traveller and the machibe are not traveling
-		if (!traveling) {
-			//	If the traveller has travel in time, then...
-			if (index > 0) {
-				//	For each travel
-				for (int i = 0; i < index; i++) {
-					//	If the travel is active, then...
-					if (formerList [i].activeInHierarchy) {
-						//	Update time and position of the traveller
-						travelList [i].PositionUpdate (formerList [i]);
-						travelList [i].TimeUpdate (time_c);
-						//	And animate him
-						Action aux = travelList [i].GetAction ();
-						formerList [i].GetComponent<Movement> ().Move (aux.GetDirection (), aux.GetHold (), aux.GetJump ());
-					}
-				}
-			}
-		}
-
-		//	If traveller and the machibe are traveling
-		else {
-			
-			for ( int i = 0; i < index; i++ ){
-				if (formerList [i].activeInHierarchy) {
-					
-					if (travelList [i].TimeReverse (time_c)) {
-						travelList [i].PositionUpdate (formerList [i]);
-						//	And animate him
-						Action aux = travelList [i].GetAction ();
-						formerList [i].GetComponent<Movement> ().Move (aux.GetDirection (), aux.GetHold (), aux.GetJump ());
-					} else {
-						if( i == index-1)
-							EndTimeTravel ();
-					}
-
-				}else{
-					//	Wait to appear again
-				}
-			}
-
-		}
-	}
-
-	//Private Methods
-	private void BegingTimeTravel(){
-		
-		//	End the current travel and add a new one
-		travelList [index].EndTravel ();
-		travelList.Add (new Travel ());
-		//	Increassing the index
-		index++;
-
-		// The traveller change apparently to unactive.
-		traveller.GetComponentInChildren<SkinnedMeshRenderer> ().enabled =false;
-		traveller.GetComponent<Controller> ().MovementActive = false;
-
-		//	Genetation of a former
-		travelList [index-1].SetIndexToEnd ();
-		Action temp = travelList [index-1].GetAction ();
-		GameObject former = (GameObject)Instantiate (
-			formerPrefab, 
-			temp.GetPosition(), 
-			Quaternion.FromToRotation(Vector3.forward,temp.GetDirection())
-		);
-		formerList.Add (former);
-
-		//	Set animations backwards
-		traveling = true;
-		for (int i = 0; i < index; i++) {
-			formerList[i].GetComponent<Animator> ().SetFloat ("Speed",-1);
-		}
-	}
-
-	private void EndTimeTravel(){
-		//	Back in Time
-		//ResetTravels ();
-		time_i = Time.time;
-		travelNum --;
-		//	Set animations backwards
-		traveling = false;
-		for (int i = 0; i < index; i++) {
-			formerList[i].GetComponent<Animator> ().SetFloat ("Speed",1);
-		}
-		//	Reactivate the traveller
-		traveller.transform.position = transform.position;
-		traveller.transform.rotation = transform.rotation;
-		traveller.GetComponentInChildren<SkinnedMeshRenderer> ().enabled = true;
-		traveller.GetComponent<Controller> ().MovementActive = true;
-	}
-
-	//	Trigger Methods
-	void OnTriggerEnter(Collider other){
-		//	If the traveller has enter he is going to travel in time
-		if ( !travellerInside && other.gameObject == traveller && time_c > delay ) {
-			travellerInside = true;
-			if (travelNum > 0)
-				BegingTimeTravel ();
-		}
-		//	If the respawn enter to the machine it set to unactive
-		if (other.tag == "Respawn")
-			for (int i = 0; i < index; i++)
-				if (travelList [i].Ended ())
-					other.gameObject.SetActive (false);
-	}
-	void OnTriggerExit(Collider other){
-		//	If the traveller has exit the flag change.
-		if( travellerInside && other.gameObject == traveller )
-			travellerInside = false;
-	}
-
-
 }
-*/
