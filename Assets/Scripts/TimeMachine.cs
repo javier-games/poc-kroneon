@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Kroneon.Li;
 using UnityEngine.PostProcessing;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(BoxCollider))]
 public class TimeMachine : MonoBehaviour {
@@ -15,6 +16,12 @@ public class TimeMachine : MonoBehaviour {
 	[SerializeField] private GameObject	formerPrefab;		//	Prefab of the traveller
 	[SerializeField] private int 		travelNum = 3;		//	Initial total times of the level.
 	[SerializeField] private float 		delay = 2;			//	Delay per time travel
+
+	//	Level
+	[SerializeField] private Image		levelTime;
+	[SerializeField] private float 		totalTime = 60.0f;
+	[SerializeField] private Image		levelWaitTime;
+	[SerializeField] private float		waitTime = 5.0f;
 
 
 	//	Private Variables
@@ -30,8 +37,6 @@ public class TimeMachine : MonoBehaviour {
 
 	private bool travellerInside = true;
 
-
-
 	//	Initialization
 
 	void Start () {
@@ -42,6 +47,13 @@ public class TimeMachine : MonoBehaviour {
 		formerList = new List<GameObject>();
 
 		time_i = Time.time;
+
+		Camera.main.transform.GetComponent<PostProcessingBehaviour> ().profile.motionBlur.enabled = false;
+
+
+		// Level
+		levelTime.fillAmount = 0;
+		levelWaitTime.fillAmount = 0;
 
 	}
 
@@ -61,9 +73,19 @@ public class TimeMachine : MonoBehaviour {
 
 		time_c = Time.time - time_i;
 
+		// Level
+		if (traveling) {
+			levelTime.fillAmount = time_c / totalTime;
+			levelWaitTime.fillAmount = 1 -time_c / waitTime;
+		} else {
+			levelTime.fillAmount = 1 - time_c / totalTime;
+			levelWaitTime.fillAmount = time_c / waitTime;
+		}
+
+
 		if (traveling) {
 			for ( int i = 0; i <= index && traveling; i++) {
-				if (formerList [i].activeInHierarchy) {
+				if (!travelList[i].DidTimeTravelFinished()) {
 					if (travelList [i].AdjustTimeReverse (time_c)) {
 						travelList [i].AdjustPosition (formerList [i]);
 						Action aux = travelList [i].GetAction ();
@@ -76,22 +98,24 @@ public class TimeMachine : MonoBehaviour {
 				}
 			}
 		} else {
-			for (int i = 0; i < index && formerList[i].activeInHierarchy; i++) {
-				if (travelList [i].AdjustTime (time_c)) {
-					travelList [i].AdjustPosition (formerList [i]);
-					Action aux = travelList [i].GetAction ();
-					formerList [i].GetComponent<Movement> ().Move (
-						aux.GetDirection (),
-						aux.GetHold (),
-						aux.GetJump ()
-					);
-				}else{
-					formerList [i].GetComponent<Movement> ().Move (
-						Vector3.zero,
-						false,
-						false
-					);
-					travelList [i].SetDisableTime (time_c);
+			for (int i = 0; i < index; i++) {
+				if (!travelList [i].DidTimeTravelFinished ()) {
+					if (travelList [i].AdjustTime (time_c)) {
+						travelList [i].AdjustPosition (formerList [i]);
+						Action aux = travelList [i].GetAction ();
+						formerList [i].GetComponent<Movement> ().Move (
+							aux.GetDirection (),
+							aux.GetHold (),
+							aux.GetJump ()
+						);
+					} else {
+						formerList [i].GetComponent<Movement> ().Move (
+							Vector3.zero,
+							false,
+							false
+						);
+						travelList [i].SetDisableTime (time_c);
+					}
 				}
 			}
 		}
@@ -108,8 +132,7 @@ public class TimeMachine : MonoBehaviour {
 		time_i = Time.time;
 		time_c = Time.time - time_i;
 
-		traveller.GetComponentInChildren<SkinnedMeshRenderer> ().enabled =false;
-		traveller.GetComponent<Controller> ().MovementActive = false;
+		Disable (traveller);
 
 		Action temp = travelList [index].GetAction ();
 		GameObject former = (GameObject)Instantiate (
@@ -143,13 +166,29 @@ public class TimeMachine : MonoBehaviour {
 		}
 		traveller.transform.position = transform.position;
 		traveller.transform.rotation = transform.rotation;
-		traveller.GetComponentInChildren<SkinnedMeshRenderer> ().enabled = true;
-		traveller.GetComponent<Controller> ().MovementActive = true;
+
+		Enable (traveller);
 
 		Camera.main.transform.GetComponent<PostProcessingBehaviour> ().profile.motionBlur.enabled = false;
 		Time.timeScale = 1f;
 		index++;
 
+	}
+
+
+	private void Disable(GameObject model){
+		model.GetComponentInChildren<SkinnedMeshRenderer> ().enabled =false;
+		model.GetComponent<CapsuleCollider>().enabled = false;
+		model.GetComponent<Rigidbody>().isKinematic = true;
+		if(model.name == traveller.name)
+			model.GetComponent<Controller> ().MovementActive = false;
+	}
+	private void Enable(GameObject model){
+		model.GetComponentInChildren<SkinnedMeshRenderer> ().enabled =true;
+		model.GetComponent<Rigidbody>().isKinematic = false;
+		model.GetComponent<CapsuleCollider>().enabled = true;
+		if(model.name == traveller.name)
+			model.GetComponent<Controller> ().MovementActive = true;
 	}
 
 
@@ -165,8 +204,11 @@ public class TimeMachine : MonoBehaviour {
 		}
 		if (other.tag == "Respawn")
 			for (int i = 0; i < index; i++)
-				if (travelList [i].Ended ())
-					other.gameObject.SetActive (false);
+				if (travelList [i].Ended ()) {
+
+					Disable (formerList [i]);
+					travelList [i].SetDisableTime (time_c);
+				}
 	}
 	void OnTriggerExit(Collider other){
 		//	If the traveller has exit the flag change.

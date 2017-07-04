@@ -110,6 +110,27 @@ namespace Kroneon.Li{
 		public float GetDisableTime(){
 			return disableTime;
 		}
+			
+		public bool DidTimeTravelFinished(){
+			return disableTime > 0 ? true : false;
+		}
+
+		public bool TimeToEnable(float currentTime, ref float lastTime){
+			Debug.Log (disableTime+" "+currentTime+" "+lastTime);
+			disableTime = disableTime - (currentTime - lastTime);
+			lastTime = currentTime;
+
+
+			if( disableTime<=0 ){
+				
+				disableTime = 0;
+				Debug.Log (disableTime+" "+currentTime+" "+lastTime);
+				return true;
+			}
+			else{Debug.Log (disableTime+" "+currentTime+" "+lastTime);
+				return false;}
+			
+		}
 	
 	}
 }
