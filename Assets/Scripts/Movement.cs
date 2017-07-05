@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 namespace Kroneon.Li{
 	
 	[RequireComponent(typeof(Rigidbody))]
 	[RequireComponent(typeof(CapsuleCollider))]
 	[RequireComponent(typeof(Animator))]
+	[RequireComponent(typeof(AudioSource))]
 
 	public class Movement : MonoBehaviour
 	{
@@ -17,6 +19,7 @@ namespace Kroneon.Li{
 		[SerializeField] float m_MoveSpeedMultiplier = 1f;
 		[SerializeField] float m_AnimSpeedMultiplier = 1f;
 		[SerializeField] float m_GroundCheckDistance = 0.2f;
+
 
 		Rigidbody m_Rigidbody;
 		Animator m_Animator;
@@ -33,6 +36,13 @@ namespace Kroneon.Li{
 		bool m_Crouching;
 
 
+		//	Audio
+		[SerializeField] AudioClip[] normalSteps;
+		[SerializeField] AudioClip jumpSound; 
+		[SerializeField] AudioClip crouching;
+		private AudioSource audioControl;
+
+
 		void Start()
 		{
 			m_Animator = GetComponent<Animator>();
@@ -43,6 +53,11 @@ namespace Kroneon.Li{
 
 			m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 			m_OrigGroundCheckDistance = m_GroundCheckDistance;
+
+			audioControl = GetComponent<AudioSource> ();
+
+			audioControl.clip = normalSteps [0];
+
 		}
 
 
@@ -220,6 +235,15 @@ namespace Kroneon.Li{
 			}
 		}
 
+		public void SoundStep(){
+			if (m_ForwardAmount > 0.1) {
+				if (audioControl.isPlaying) {
+					audioControl.Stop ();
+					audioControl.clip = normalSteps[Random.Range(0,normalSteps.Length)];
+				}
+				audioControl.Play ();
+			}
+		}
 
 	}
 }
