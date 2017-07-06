@@ -268,7 +268,10 @@ ModelImporter:
     400258: //RootNode
     400260: Troll
     4300000: Troll
-    7400000: Take 001
+    7400000: Hit
+    7400002: Attak
+    7400004: Sniff
+    7400006: Attak2
     9500000: //RootNode
     13700000: Troll
   materials:
@@ -295,12 +298,1542 @@ ModelImporter:
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
-    extraExposedTransformPaths: []
-    clipAnimations: []
+    extraExposedTransformPaths:
+    - Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower Arm/Bone018(mirrored)/Right
+      Hand
+    clipAnimations:
+    - serializedVersion: 16
+      name: Hit
+      takeName: Take 001
+      firstFrame: 680
+      lastFrame: 710
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Troll
+        weight: 0
+      - path: Hips
+        weight: 1
+      - path: Hips/Hips 1
+        weight: 1
+      - path: Hips/Hips 1/Spine 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Bone007
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone055
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057/Bone058
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057/Bone058/Bone059
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057/Bone058/Bone059/Bone060
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057/Bone058/Bone059/Bone060/Bone061
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Bone020(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Thumb 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Thumb 01/Right Thumb 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Thumb 01/Right Thumb 02/Right Thumb
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Thumb 01/Right Thumb 02/Right Thumb
+          03/Bone041(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Index 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Index 01/Right Index 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Index 01/Right Index 02/Right Index
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Index 01/Right Index 02/Right Index
+          03/Bone040(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Middle 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Middle 01/Right Middle 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Middle 01/Right Middle 02/Right Middle
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Middle 01/Right Middle 02/Right Middle
+          03/Bone028(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Ring 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Ring 01/Right Ring 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Ring 01/Right Ring 02/Right Ring
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Ring 01/Right Ring 02/Right Ring
+          03/Bone032(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Pink 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Pink 01/Right Pink 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Pink 01/Right Pink 02/Right Pink
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Pink 01/Right Pink 02/Right Pink
+          03/Bone036(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone064
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone064/Bone065
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone062
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone062/Bone063
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone066
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone066/Bone067
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Bone020
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Thumb 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Thumb 01/Left Thumb 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Thumb 01/Left Thumb 02/Left Thumb 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Thumb 01/Left Thumb 02/Left Thumb 03/Bone041
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Index 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Index 01/Left Index 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Index 01/Left Index 02/Left Index 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Index 01/Left Index 02/Left Index 03/Bone040
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Middle 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Middle 01/Left Middle 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Middle 01/Left Middle 02/Left Middle 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Middle 01/Left Middle 02/Left Middle 03/Bone028
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Ring 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Ring 01/Left Ring 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Ring 01/Left Ring 02/Left Ring 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Ring 01/Left Ring 02/Left Ring 03/Bone032
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Pink 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Pink 01/Left Pink 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Pink 01/Left Pink 02/Left Pink 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Pink 01/Left Pink 02/Left Pink 03/Bone036
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 05
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 05/Right Toe 06
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 05/Right Toe 06/Bone050(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 07
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 07/Right Toe 08
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 07/Right Toe 08/Bone053(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 03
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 03/Right Toe 04
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 03/Right Toe 04/Bone047(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 01
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 01/Right Toe 02
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 01/Right Toe 02/Bone044(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Bone079
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Bone079/Bone080
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Bone079/Bone080/Bone081
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Bone079/Bone080/Bone081/Bone082
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 01
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 01/Left Toe 02
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 01/Left Toe 02/Bone044
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 03
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 03/Left Toe 04
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 03/Left Toe 04/Bone047
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 05
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 05/Left Toe 06
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 05/Left Toe 06/Bone050
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 07
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 07/Left Toe 08
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 07/Left Toe 08/Bone053
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Bone079(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Bone079(mirrored)/Bone080(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Bone079(mirrored)/Bone080(mirrored)/Bone081(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Bone079(mirrored)/Bone080(mirrored)/Bone081(mirrored)/Bone082(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Bone073
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074/Bone075
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074/Bone075/Bone078
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074/Bone075/Bone078/Bone076
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074/Bone075/Bone078/Bone076/Bone077
+        weight: 0
+      - path: Hips/Hips 1/Bone068
+        weight: 0
+      - path: Hips/Hips 1/Bone068/Bone069
+        weight: 0
+      - path: Hips/Hips 1/Bone068/Bone069/Bone070
+        weight: 0
+      - path: Hips/Hips 1/Bone068/Bone069/Bone070/Bone071
+        weight: 0
+      - path: Hips/Hips 1/Bone068/Bone069/Bone070/Bone071/Bone072
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attak
+      takeName: Take 001
+      firstFrame: 520
+      lastFrame: 565
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Troll
+        weight: 0
+      - path: Hips
+        weight: 1
+      - path: Hips/Hips 1
+        weight: 1
+      - path: Hips/Hips 1/Spine 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Bone007
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone055
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057/Bone058
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057/Bone058/Bone059
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057/Bone058/Bone059/Bone060
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057/Bone058/Bone059/Bone060/Bone061
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Bone020(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Thumb 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Thumb 01/Right Thumb 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Thumb 01/Right Thumb 02/Right Thumb
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Thumb 01/Right Thumb 02/Right Thumb
+          03/Bone041(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Index 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Index 01/Right Index 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Index 01/Right Index 02/Right Index
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Index 01/Right Index 02/Right Index
+          03/Bone040(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Middle 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Middle 01/Right Middle 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Middle 01/Right Middle 02/Right Middle
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Middle 01/Right Middle 02/Right Middle
+          03/Bone028(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Ring 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Ring 01/Right Ring 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Ring 01/Right Ring 02/Right Ring
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Ring 01/Right Ring 02/Right Ring
+          03/Bone032(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Pink 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Pink 01/Right Pink 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Pink 01/Right Pink 02/Right Pink
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Pink 01/Right Pink 02/Right Pink
+          03/Bone036(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone064
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone064/Bone065
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone062
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone062/Bone063
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone066
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone066/Bone067
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Bone020
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Thumb 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Thumb 01/Left Thumb 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Thumb 01/Left Thumb 02/Left Thumb 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Thumb 01/Left Thumb 02/Left Thumb 03/Bone041
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Index 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Index 01/Left Index 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Index 01/Left Index 02/Left Index 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Index 01/Left Index 02/Left Index 03/Bone040
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Middle 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Middle 01/Left Middle 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Middle 01/Left Middle 02/Left Middle 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Middle 01/Left Middle 02/Left Middle 03/Bone028
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Ring 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Ring 01/Left Ring 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Ring 01/Left Ring 02/Left Ring 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Ring 01/Left Ring 02/Left Ring 03/Bone032
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Pink 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Pink 01/Left Pink 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Pink 01/Left Pink 02/Left Pink 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Pink 01/Left Pink 02/Left Pink 03/Bone036
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 05
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 05/Right Toe 06
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 05/Right Toe 06/Bone050(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 07
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 07/Right Toe 08
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 07/Right Toe 08/Bone053(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 03
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 03/Right Toe 04
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 03/Right Toe 04/Bone047(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 01
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 01/Right Toe 02
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 01/Right Toe 02/Bone044(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Bone079
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Bone079/Bone080
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Bone079/Bone080/Bone081
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Bone079/Bone080/Bone081/Bone082
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 01
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 01/Left Toe 02
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 01/Left Toe 02/Bone044
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 03
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 03/Left Toe 04
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 03/Left Toe 04/Bone047
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 05
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 05/Left Toe 06
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 05/Left Toe 06/Bone050
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 07
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 07/Left Toe 08
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 07/Left Toe 08/Bone053
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Bone079(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Bone079(mirrored)/Bone080(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Bone079(mirrored)/Bone080(mirrored)/Bone081(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Bone079(mirrored)/Bone080(mirrored)/Bone081(mirrored)/Bone082(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Bone073
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074/Bone075
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074/Bone075/Bone078
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074/Bone075/Bone078/Bone076
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074/Bone075/Bone078/Bone076/Bone077
+        weight: 0
+      - path: Hips/Hips 1/Bone068
+        weight: 0
+      - path: Hips/Hips 1/Bone068/Bone069
+        weight: 0
+      - path: Hips/Hips 1/Bone068/Bone069/Bone070
+        weight: 0
+      - path: Hips/Hips 1/Bone068/Bone069/Bone070/Bone071
+        weight: 0
+      - path: Hips/Hips 1/Bone068/Bone069/Bone070/Bone071/Bone072
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sniff
+      takeName: Take 001
+      firstFrame: 160
+      lastFrame: 310
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Troll
+        weight: 0
+      - path: Hips
+        weight: 1
+      - path: Hips/Hips 1
+        weight: 1
+      - path: Hips/Hips 1/Spine 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Bone007
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone055
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057/Bone058
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057/Bone058/Bone059
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057/Bone058/Bone059/Bone060
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057/Bone058/Bone059/Bone060/Bone061
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Bone020(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Thumb 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Thumb 01/Right Thumb 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Thumb 01/Right Thumb 02/Right Thumb
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Thumb 01/Right Thumb 02/Right Thumb
+          03/Bone041(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Index 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Index 01/Right Index 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Index 01/Right Index 02/Right Index
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Index 01/Right Index 02/Right Index
+          03/Bone040(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Middle 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Middle 01/Right Middle 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Middle 01/Right Middle 02/Right Middle
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Middle 01/Right Middle 02/Right Middle
+          03/Bone028(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Ring 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Ring 01/Right Ring 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Ring 01/Right Ring 02/Right Ring
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Ring 01/Right Ring 02/Right Ring
+          03/Bone032(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Pink 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Pink 01/Right Pink 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Pink 01/Right Pink 02/Right Pink
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Pink 01/Right Pink 02/Right Pink
+          03/Bone036(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone064
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone064/Bone065
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone062
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone062/Bone063
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone066
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone066/Bone067
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Bone020
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Thumb 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Thumb 01/Left Thumb 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Thumb 01/Left Thumb 02/Left Thumb 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Thumb 01/Left Thumb 02/Left Thumb 03/Bone041
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Index 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Index 01/Left Index 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Index 01/Left Index 02/Left Index 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Index 01/Left Index 02/Left Index 03/Bone040
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Middle 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Middle 01/Left Middle 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Middle 01/Left Middle 02/Left Middle 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Middle 01/Left Middle 02/Left Middle 03/Bone028
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Ring 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Ring 01/Left Ring 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Ring 01/Left Ring 02/Left Ring 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Ring 01/Left Ring 02/Left Ring 03/Bone032
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Pink 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Pink 01/Left Pink 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Pink 01/Left Pink 02/Left Pink 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Pink 01/Left Pink 02/Left Pink 03/Bone036
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 05
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 05/Right Toe 06
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 05/Right Toe 06/Bone050(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 07
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 07/Right Toe 08
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 07/Right Toe 08/Bone053(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 03
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 03/Right Toe 04
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 03/Right Toe 04/Bone047(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 01
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 01/Right Toe 02
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 01/Right Toe 02/Bone044(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Bone079
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Bone079/Bone080
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Bone079/Bone080/Bone081
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Bone079/Bone080/Bone081/Bone082
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 01
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 01/Left Toe 02
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 01/Left Toe 02/Bone044
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 03
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 03/Left Toe 04
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 03/Left Toe 04/Bone047
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 05
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 05/Left Toe 06
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 05/Left Toe 06/Bone050
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 07
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 07/Left Toe 08
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 07/Left Toe 08/Bone053
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Bone079(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Bone079(mirrored)/Bone080(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Bone079(mirrored)/Bone080(mirrored)/Bone081(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Bone079(mirrored)/Bone080(mirrored)/Bone081(mirrored)/Bone082(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Bone073
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074/Bone075
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074/Bone075/Bone078
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074/Bone075/Bone078/Bone076
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074/Bone075/Bone078/Bone076/Bone077
+        weight: 0
+      - path: Hips/Hips 1/Bone068
+        weight: 0
+      - path: Hips/Hips 1/Bone068/Bone069
+        weight: 0
+      - path: Hips/Hips 1/Bone068/Bone069/Bone070
+        weight: 0
+      - path: Hips/Hips 1/Bone068/Bone069/Bone070/Bone071
+        weight: 0
+      - path: Hips/Hips 1/Bone068/Bone069/Bone070/Bone071/Bone072
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attak2
+      takeName: Take 001
+      firstFrame: 580
+      lastFrame: 660
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Troll
+        weight: 0
+      - path: Hips
+        weight: 1
+      - path: Hips/Hips 1
+        weight: 1
+      - path: Hips/Hips 1/Spine 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Bone007
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone055
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057/Bone058
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057/Bone058/Bone059
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057/Bone058/Bone059/Bone060
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Bone004/Neck/Head/Jaw/Bone056/Bone057/Bone058/Bone059/Bone060/Bone061
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Bone020(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Thumb 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Thumb 01/Right Thumb 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Thumb 01/Right Thumb 02/Right Thumb
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Thumb 01/Right Thumb 02/Right Thumb
+          03/Bone041(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Index 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Index 01/Right Index 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Index 01/Right Index 02/Right Index
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Index 01/Right Index 02/Right Index
+          03/Bone040(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Middle 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Middle 01/Right Middle 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Middle 01/Right Middle 02/Right Middle
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Middle 01/Right Middle 02/Right Middle
+          03/Bone028(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Ring 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Ring 01/Right Ring 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Ring 01/Right Ring 02/Right Ring
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Ring 01/Right Ring 02/Right Ring
+          03/Bone032(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Pink 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Pink 01/Right Pink 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Pink 01/Right Pink 02/Right Pink
+          03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Right Hand/Right Pink 01/Right Pink 02/Right Pink
+          03/Bone036(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone064
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone064/Bone065
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone062
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone062/Bone063
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone066
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Right Clavicle/Right Upper Arm/Right Lower
+          Arm/Bone018(mirrored)/Bone066/Bone067
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Bone020
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Thumb 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Thumb 01/Left Thumb 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Thumb 01/Left Thumb 02/Left Thumb 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Thumb 01/Left Thumb 02/Left Thumb 03/Bone041
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Index 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Index 01/Left Index 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Index 01/Left Index 02/Left Index 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Index 01/Left Index 02/Left Index 03/Bone040
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Middle 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Middle 01/Left Middle 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Middle 01/Left Middle 02/Left Middle 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Middle 01/Left Middle 02/Left Middle 03/Bone028
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Ring 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Ring 01/Left Ring 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Ring 01/Left Ring 02/Left Ring 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Ring 01/Left Ring 02/Left Ring 03/Bone032
+        weight: 0
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Pink 01
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Pink 01/Left Pink 02
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Pink 01/Left Pink 02/Left Pink 03
+        weight: 1
+      - path: Hips/Hips 1/Spine 01/Spine 02/Left Clavicle/Left Upper Arm/Left Lower
+          Arm/Bone018/Left Hand/Left Pink 01/Left Pink 02/Left Pink 03/Bone036
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe
+        weight: 1
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 05
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 05/Right Toe 06
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 05/Right Toe 06/Bone050(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 07
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 07/Right Toe 08
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 07/Right Toe 08/Bone053(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 03
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 03/Right Toe 04
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 03/Right Toe 04/Bone047(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 01
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 01/Right Toe 02
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Right
+          Toe/Bone013(mirrored)(mirrored)/Right Toe 01/Right Toe 02/Bone044(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Bone079
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Bone079/Bone080
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Bone079/Bone080/Bone081
+        weight: 0
+      - path: Hips/Hips 1/Right Upper Leg/Right Lower Leg/Bone010/Right Foot/Bone079/Bone080/Bone081/Bone082
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe
+        weight: 1
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 01
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 01/Left Toe 02
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 01/Left Toe 02/Bone044
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 03
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 03/Left Toe 04
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 03/Left Toe 04/Bone047
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 05
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 05/Left Toe 06
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 05/Left Toe 06/Bone050
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 07
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 07/Left Toe 08
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Left
+          Toe/Bone013(mirrored)/Left Toe 07/Left Toe 08/Bone053
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Bone079(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Bone079(mirrored)/Bone080(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Bone079(mirrored)/Bone080(mirrored)/Bone081(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Left Upper Leg/Left Lower Leg/Bone010(mirrored)/Left Foot/Bone079(mirrored)/Bone080(mirrored)/Bone081(mirrored)/Bone082(mirrored)
+        weight: 0
+      - path: Hips/Hips 1/Bone073
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074/Bone075
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074/Bone075/Bone078
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074/Bone075/Bone078/Bone076
+        weight: 0
+      - path: Hips/Hips 1/Bone073/Bone074/Bone075/Bone078/Bone076/Bone077
+        weight: 0
+      - path: Hips/Hips 1/Bone068
+        weight: 0
+      - path: Hips/Hips 1/Bone068/Bone069
+        weight: 0
+      - path: Hips/Hips 1/Bone068/Bone069/Bone070
+        weight: 0
+      - path: Hips/Hips 1/Bone068/Bone069/Bone070/Bone071
+        weight: 0
+      - path: Hips/Hips 1/Bone068/Bone069/Bone070/Bone071/Bone072
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.08
+    globalScale: 0.06
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -740,656 +2273,656 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Hips
       parentName: Troll(Clone)
-      position: {x: -0, y: 1.3095466, z: -0.048532903}
+      position: {x: -0, y: 0.98216, z: -0.036399677}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 0.5057721, y: 0.5057721, z: 0.5057721}
     - name: Hips 1
       parentName: Hips
-      position: {x: -0.0000000011920929, y: 0.000000009536743, z: 0.00000030517577}
+      position: {x: -8.9406965e-10, y: 0.000000007152557, z: 0.00000022888183}
       rotation: {x: 0.044529732, y: -0.7057032, z: 0.04452988, w: -0.7057033}
       scale: {x: 1.977176, y: 1.9771764, z: 1.9771756}
     - name: Spine 01
       parentName: Hips 1
-      position: {x: -0.35598388, y: 0.000000066757195, z: -0.00000004114674}
+      position: {x: -0.26698792, y: 0.000000050067896, z: -0.000000030860058}
       rotation: {x: 0.0000004172325, y: 0.000000029802322, z: -0.11357027, w: -0.99353004}
       scale: {x: 1.0000007, y: 1.0000005, z: 1.0000007}
     - name: Spine 02
       parentName: Spine 01
-      position: {x: -0.4596986, y: 0, z: -1.6370904e-12}
+      position: {x: -0.34477395, y: 0, z: -1.2278178e-12}
       rotation: {x: -0.00000047683716, y: -0.00000011920929, z: 0.20620644, w: 0.97850853}
       scale: {x: 0.9999998, y: 0.99999964, z: 0.99999994}
     - name: Bone004
       parentName: Spine 02
-      position: {x: -0.35417235, y: 0.0000025939942, z: 0.00000005124537}
+      position: {x: -0.26562926, y: 0.0000019454956, z: 0.000000038434028}
       rotation: {x: -0.00000051153563, y: -0.0000000022470301, z: 0.0043927557, w: 0.99999034}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
     - name: Neck
       parentName: Bone004
-      position: {x: 0.00000015258789, y: 0, z: -0.00000015258789}
+      position: {x: 0.000000114440915, y: 0, z: -0.000000114440915}
       rotation: {x: 0.00000050453264, y: -0.000000030304314, z: -0.026536731, w: 0.9996479}
       scale: {x: 1.0000006, y: 1.0000001, z: 0.99999994}
     - name: Head
       parentName: Neck
-      position: {x: -0.115488894, y: 0, z: -0.00000001103559}
+      position: {x: -0.08661667, y: 0, z: -0.000000008276693}
       rotation: {x: 0.00000081956387, y: -0.00000020861626, z: 0.15628232, w: 0.9877125}
       scale: {x: 1.0000001, y: 0.99999976, z: 0.99999946}
     - name: Bone007
       parentName: Head
-      position: {x: -0.4541197, y: 0.00000045776366, z: 1.4551915e-13}
+      position: {x: -0.3405898, y: 0.00000034332274, z: 1.0913936e-13}
       rotation: {x: -2.8453585e-14, y: -6.9766936e-15, z: -0.0045268554, w: 0.99998975}
       scale: {x: 1, y: 1, z: 1}
     - name: Jaw
       parentName: Head
-      position: {x: -0.000000076293944, y: 0, z: 0.00000015258782}
+      position: {x: -0.000000057220458, y: 0, z: 0.000000114440866}
       rotation: {x: 0.0000006801335, y: -0.0000005447093, z: 0.487316, w: 0.8732257}
       scale: {x: 1.000001, y: 1.0000006, z: 1.000001}
     - name: Bone055
       parentName: Jaw
-      position: {x: -0.4546081, y: 0.00000015258789, z: -0.00000006246468}
+      position: {x: -0.3409561, y: 0.000000114440915, z: -0.00000004684851}
       rotation: {x: 5.6843426e-14, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Bone056
       parentName: Jaw
-      position: {x: -0.2241098, y: 0.04041, z: -0.000081024176}
+      position: {x: -0.16808236, y: 0.030307502, z: -0.000060768132}
       rotation: {x: -0.000000011156657, y: -0.00000001925366, z: -0.37513602, w: 0.9269698}
       scale: {x: 0.99999976, y: 0.99999946, z: 1.0000002}
     - name: Bone057
       parentName: Bone056
-      position: {x: -0.04886932, y: 0, z: -0.000000007152557}
+      position: {x: -0.03665199, y: 0, z: -0.000000005364418}
       rotation: {x: 0.000000006051542, y: -0.0000000036748586, z: 0.16473629, w: 0.98633766}
       scale: {x: 1.0000007, y: 1.0000002, z: 1.0000008}
     - name: Bone058
       parentName: Bone057
-      position: {x: -0.032148436, y: 0.00000015258789, z: -0.0000000023841857}
+      position: {x: -0.024111327, y: 0.000000114440915, z: -0.0000000017881393}
       rotation: {x: 0.000000091780024, y: -0.000000046170687, z: 0.17309691, w: 0.98490477}
       scale: {x: 1.0000004, y: 0.9999996, z: 1}
     - name: Bone059
       parentName: Bone058
-      position: {x: -0.043047484, y: 0, z: 0}
+      position: {x: -0.032285612, y: 0, z: 0}
       rotation: {x: -0.000000035501355, y: -0.00000007624707, z: 0.043635044, w: 0.9990475}
       scale: {x: 1.0000007, y: 1.0000006, z: 1.0000006}
     - name: Bone060
       parentName: Bone059
-      position: {x: -0.037665863, y: 0, z: 0.0000000023841857}
+      position: {x: -0.028249398, y: 0, z: 0.0000000017881393}
       rotation: {x: 0.000000012470385, y: 0.000000043406875, z: -0.18893047, w: 0.9819905}
       scale: {x: 1.0000001, y: 1.0000001, z: 1.000001}
     - name: Bone061
       parentName: Bone060
-      position: {x: -0.029131848, y: 0, z: 0.0000000023841857}
+      position: {x: -0.021848887, y: 0, z: 0.0000000017881393}
       rotation: {x: 0.00000006519257, y: -1.9428899e-15, z: -0.000000029802319, w: 1}
       scale: {x: 1.0000001, y: 1.0000001, z: 1}
     - name: Right Clavicle
       parentName: Spine 02
-      position: {x: -0.067560576, y: 0.111771695, z: 0.0000004577638}
+      position: {x: -0.05067043, y: 0.08382877, z: 0.00000034332285}
       rotation: {x: -0.53301, y: -0.3511044, z: 0.6796958, w: -0.36144125}
       scale: {x: 1.0000012, y: 1.0000013, z: 1.0000001}
     - name: Right Upper Arm
       parentName: Right Clavicle
-      position: {x: -0.51134825, y: -0.00000030517577, z: -0.000000009536743}
+      position: {x: -0.3835112, y: -0.00000022888183, z: -0.000000007152557}
       rotation: {x: -0.25895765, y: 0.08200459, z: 0.051409196, w: 0.96102715}
       scale: {x: 1.0000007, y: 1.0000007, z: 1.0000002}
     - name: Right Lower Arm
       parentName: Right Upper Arm
-      position: {x: -0.5080113, y: 0.00000022888183, z: 0.00000015258789}
+      position: {x: -0.38100845, y: 0.00000017166137, z: 0.000000114440915}
       rotation: {x: 0.002712771, y: 0.024738554, z: 0.0133024175, w: 0.9996018}
       scale: {x: 1.000001, y: 1.0000011, z: 0.9999997}
     - name: Bone018(mirrored)
       parentName: Right Lower Arm
-      position: {x: -0.6498187, y: 0.00000022888183, z: -0.00000019073485}
+      position: {x: -0.48736405, y: 0.00000017166137, z: -0.00000014305114}
       rotation: {x: -0.0000030249303, y: -0.00000015655219, z: 0.000029757615, w: 1}
       scale: {x: 1.0000001, y: 1.0000002, z: 1.0000004}
     - name: Right Hand
       parentName: Bone018(mirrored)
-      position: {x: 0.000044784545, y: -0.00032783506, z: -0.0002518463}
+      position: {x: 0.00003358841, y: -0.0002458763, z: -0.00018888473}
       rotation: {x: 0.2509235, y: -0.072210856, z: -0.012859957, w: 0.96522415}
       scale: {x: 1.0000006, y: 1.0000004, z: 1.0000007}
     - name: Bone020(mirrored)
       parentName: Right Hand
-      position: {x: -0.27536646, y: 0.0000010681151, z: -0.000000076293944}
+      position: {x: -0.20652485, y: 0.00000080108634, z: -0.000000057220458}
       rotation: {x: 0.00000016205013, y: 0.00000004470347, z: -0.000000059604645,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Right Index 01
       parentName: Right Hand
-      position: {x: -0.2710235, y: 0.0007080078, z: 0.17211922}
+      position: {x: -0.20326763, y: 0.00053100585, z: 0.12908942}
       rotation: {x: -0.065583594, y: 0.06433251, z: -0.035834666, w: 0.9951262}
       scale: {x: 1.0000004, y: 1.0000004, z: 1.0000004}
     - name: Right Index 02
       parentName: Right Index 01
-      position: {x: -0.17372756, y: -0.00000015258789, z: 0.000000085830685}
+      position: {x: -0.13029566, y: -0.000000114440915, z: 0.00000006437301}
       rotation: {x: 0.0013413872, y: 0.0009708401, z: -0.035598963, w: 0.99936473}
       scale: {x: 1.0000001, y: 0.9999997, z: 1.0000001}
     - name: Right Index 03
       parentName: Right Index 02
-      position: {x: -0.10665825, y: -0.0000008392334, z: -0.00000030517577}
+      position: {x: -0.07999369, y: -0.000000629425, z: -0.00000022888183}
       rotation: {x: 0.00465345, y: -0.0051412834, z: -0.040877447, w: 0.9991402}
       scale: {x: 0.99999964, y: 1.0000008, z: 0.9999998}
     - name: Bone040(mirrored)
       parentName: Right Index 03
-      position: {x: -0.114395514, y: 0.00000015258789, z: 0.00000028610228}
+      position: {x: -0.08579664, y: 0.000000114440915, z: 0.00000021457672}
       rotation: {x: -0.0006191764, y: -0.00014546572, z: -0.089370064, w: 0.99599826}
       scale: {x: 1, y: 0.9999997, z: 0.99999976}
     - name: Right Middle 01
       parentName: Right Hand
-      position: {x: -0.2612601, y: -0.017034605, z: 0.047489382}
+      position: {x: -0.19594507, y: -0.012775954, z: 0.03561704}
       rotation: {x: 0.0030524717, y: 0.037923217, z: -0.023436362, w: 0.99900115}
       scale: {x: 1.0000001, y: 0.99999976, z: 1.0000001}
     - name: Right Middle 02
       parentName: Right Middle 01
-      position: {x: -0.20538959, y: -0.000000076293944, z: -0.000000077486035}
+      position: {x: -0.15404218, y: -0.000000057220458, z: -0.000000058114527}
       rotation: {x: 0.0014173476, y: 0.0005036328, z: -0.03589824, w: 0.99935436}
       scale: {x: 1.0000001, y: 1.0000008, z: 1.0000002}
     - name: Right Middle 03
       parentName: Right Middle 02
-      position: {x: -0.11327651, y: -0.0000009918213, z: 0.000000114440915}
+      position: {x: -0.08495738, y: -0.00000074386594, z: 0.000000085830685}
       rotation: {x: 0.0041255257, y: -0.0043815193, z: -0.03482102, w: 0.99937546}
       scale: {x: 1.0000005, y: 0.99999994, z: 0.9999997}
     - name: Bone028(mirrored)
       parentName: Right Middle 03
-      position: {x: -0.12610275, y: 0.00000015258789, z: 0.0000000047683715}
+      position: {x: -0.09457706, y: 0.000000114440915, z: 0.0000000035762786}
       rotation: {x: -0.0000004820758, y: -0.000000081956294, z: -0.00000014901161,
         w: 1}
       scale: {x: 1.0000001, y: 1.0000001, z: 1}
     - name: Right Ring 01
       parentName: Right Hand
-      position: {x: -0.24100421, y: -0.02592041, z: -0.074851535}
+      position: {x: -0.18075316, y: -0.019440308, z: -0.05613865}
       rotation: {x: 0.038685262, y: 0.034832202, z: -0.01831486, w: 0.9984762}
       scale: {x: 0.9999993, y: 0.9999998, z: 1.0000007}
     - name: Right Ring 02
       parentName: Right Ring 01
-      position: {x: -0.18637244, y: -0.000000076293944, z: 0}
+      position: {x: -0.13977933, y: -0.000000057220458, z: 0}
       rotation: {x: 0.0015183904, y: 0.0011246981, z: -0.03838663, w: 0.9992612}
       scale: {x: 1.0000002, y: 1.0000006, z: 0.9999998}
     - name: Right Ring 03
       parentName: Right Ring 02
-      position: {x: -0.10263603, y: -0.0000010681151, z: 0.000000076293944}
+      position: {x: -0.07697702, y: -0.00000080108634, z: 0.000000057220458}
       rotation: {x: 0.00417052, y: -0.0029253794, z: -0.03970462, w: 0.9991985}
       scale: {x: 1.0000005, y: 1.0000005, z: 1}
     - name: Bone032(mirrored)
       parentName: Right Ring 03
-      position: {x: -0.11185448, y: 0.00000015258789, z: -0.000000076293944}
+      position: {x: -0.083890855, y: 0.000000114440915, z: -0.000000057220458}
       rotation: {x: -0.00042594745, y: 0.00004191926, z: -0.021680824, w: 0.99976486}
       scale: {x: 1.0000002, y: 1.0000001, z: 1.0000004}
     - name: Right Pink 01
       parentName: Right Hand
-      position: {x: -0.21775225, y: -0.009497375, z: -0.19509223}
+      position: {x: -0.1633142, y: -0.0071230317, z: -0.14631918}
       rotation: {x: 0.12102978, y: 0.03144723, z: -0.015440372, w: 0.99203056}
       scale: {x: 1, y: 1.0000007, z: 0.99999994}
     - name: Right Pink 02
       parentName: Right Pink 01
-      position: {x: -0.12372238, y: 0, z: -0.000000076293944}
+      position: {x: -0.09279179, y: 0, z: -0.000000057220458}
       rotation: {x: 0.009787008, y: -0.003421306, z: -0.031919718, w: 0.9994367}
       scale: {x: 0.9999998, y: 1.0000005, z: 1.0000002}
     - name: Right Pink 03
       parentName: Right Pink 02
-      position: {x: -0.1039315, y: -0.00000061035155, z: 0.000000095367426}
+      position: {x: -0.07794863, y: -0.00000045776366, z: 0.00000007152557}
       rotation: {x: 0.0050997697, y: -0.0042476477, z: -0.03905566, w: 0.999215}
       scale: {x: 1.0000004, y: 1.0000002, z: 1.0000004}
     - name: Bone036(mirrored)
       parentName: Right Pink 03
-      position: {x: -0.09635033, y: -0.00000015258789, z: 0.00000017166137}
+      position: {x: -0.07226275, y: -0.000000114440915, z: 0.00000012874602}
       rotation: {x: 0.00031835114, y: 0.0000056148215, z: -0.017588027, w: 0.99984527}
       scale: {x: 1.0000004, y: 0.9999999, z: 0.99999976}
     - name: Right Thumb 01
       parentName: Right Hand
-      position: {x: -0.00000030517577, y: 0, z: -0.000000085830685}
+      position: {x: -0.00000022888183, y: 0, z: -0.00000006437301}
       rotation: {x: 0.76124364, y: 0.19190067, z: -0.4236786, w: 0.45186132}
       scale: {x: 1.0000008, y: 0.99999934, z: 1.0000005}
     - name: Right Thumb 02
       parentName: Right Thumb 01
-      position: {x: -0.47334805, y: 0.0000050354, z: 0.000000114440915}
+      position: {x: -0.35501105, y: 0.00000377655, z: 0.000000085830685}
       rotation: {x: -0.006982234, y: 0.0077935793, z: 0.02726555, w: 0.99957347}
       scale: {x: 0.9999993, y: 1.0000017, z: 1.0000005}
     - name: Right Thumb 03
       parentName: Right Thumb 02
-      position: {x: -0.08464455, y: -0.00000015258789, z: 0.00000015258789}
+      position: {x: -0.06348341, y: -0.000000114440915, z: 0.000000114440915}
       rotation: {x: 0.00014312463, y: 0.0012504824, z: 0.03796631, w: 0.99927825}
       scale: {x: 1, y: 1.0000002, z: 0.99999994}
     - name: Bone041(mirrored)
       parentName: Right Thumb 03
-      position: {x: -0.11511429, y: -0.000000076293944, z: -0.000000038146972}
+      position: {x: -0.08633572, y: -0.000000057220458, z: -0.000000028610229}
       rotation: {x: -0.00000004377216, y: 0.000000029802322, z: -0.00000002980232,
         w: 1}
       scale: {x: 0.99999994, y: 1, z: 0.9999999}
     - name: Bone064
       parentName: Bone018(mirrored)
-      position: {x: -0.070621334, y: -0.2616757, z: 0.1591111}
+      position: {x: -0.052966, y: -0.19625676, z: 0.11933333}
       rotation: {x: 0.026047911, y: -0.21926649, z: -0.94453764, w: -0.2430891}
       scale: {x: 0.9999998, y: 1.0000005, z: 0.99999934}
     - name: Bone065
       parentName: Bone064
-      position: {x: -0.6935693, y: -0.00000053405756, z: -0.000000076293944}
+      position: {x: -0.520177, y: -0.00000040054317, z: -0.000000057220458}
       rotation: {x: 0.000000009546057, y: -0.0000000037252903, z: 0.0000000074505815,
         w: 1}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
     - name: Bone062
       parentName: Bone018(mirrored)
-      position: {x: -0.13112262, y: -0.22174421, z: -0.18187137}
+      position: {x: -0.098341964, y: -0.16630816, z: -0.13640353}
       rotation: {x: -0.02920376, y: 0.30201212, z: -0.9261335, w: -0.22408165}
       scale: {x: 0.9999996, y: 0.9999996, z: 1.0000001}
     - name: Bone063
       parentName: Bone062
-      position: {x: -0.8752154, y: -0.00000053405756, z: -0.000000057220458}
+      position: {x: -0.6564115, y: -0.00000040054317, z: -0.000000042915342}
       rotation: {x: 0, y: 0, z: -0.0000000037252907, w: 1}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
     - name: Bone066
       parentName: Bone018(mirrored)
-      position: {x: -0.023462217, y: 0.077188335, z: -0.33326098}
+      position: {x: -0.017596662, y: 0.05789125, z: -0.24994573}
       rotation: {x: -0.08729092, y: 0.73340255, z: -0.6526887, w: -0.16881481}
       scale: {x: 0.99999976, y: 0.99999964, z: 0.99999917}
     - name: Bone067
       parentName: Bone066
-      position: {x: -0.69260186, y: -0.00000045776366, z: 0}
+      position: {x: -0.5194514, y: -0.00000034332274, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
     - name: Left Clavicle
       parentName: Spine 02
-      position: {x: -0.067560576, y: 0.111771695, z: 0.0000004577638}
+      position: {x: -0.05067043, y: 0.08382877, z: 0.00000034332285}
       rotation: {x: 0.36144212, y: -0.67969555, z: 0.3511038, w: 0.5330101}
       scale: {x: 1.0000008, y: 1.0000001, z: 1.0000004}
     - name: Left Upper Arm
       parentName: Left Clavicle
-      position: {x: -0.5113483, y: 0.00000015258789, z: 0}
+      position: {x: -0.38351125, y: 0.000000114440915, z: 0}
       rotation: {x: 0.2589585, y: 0.08200429, z: -0.051408604, w: 0.96102697}
       scale: {x: 1.0000005, y: 1.0000005, z: 1}
     - name: Left Lower Arm
       parentName: Left Upper Arm
-      position: {x: -0.5080108, y: -0.000000076293944, z: 0}
+      position: {x: -0.3810081, y: -0.000000057220458, z: 0}
       rotation: {x: -0.0026712713, y: 0.024529163, z: -0.01351767, w: 0.99960417}
       scale: {x: 0.9999999, y: 0.9999998, z: 0.9999997}
     - name: Bone018
       parentName: Left Lower Arm
-      position: {x: -0.6498187, y: -0.00000015258789, z: -0.000000038146972}
+      position: {x: -0.48736405, y: -0.000000114440915, z: -0.000000028610229}
       rotation: {x: 0.0000029131766, y: -0.000000018713443, z: -0.000029861927, w: 1}
       scale: {x: 1, y: 1, z: 0.9999999}
     - name: Left Hand
       parentName: Bone018
-      position: {x: 0.00000045776366, y: 0.00000030517577, z: 0.00000034332274}
+      position: {x: 0.00000034332274, y: 0.00000022888183, z: 0.00000025749205}
       rotation: {x: -0.2509429, y: -0.072136745, z: 0.013026025, w: 0.96522236}
       scale: {x: 0.9999999, y: 1.0000002, z: 1.0000001}
     - name: Bone020
       parentName: Left Hand
-      position: {x: -0.27536663, y: -0.0000009155273, z: 0}
+      position: {x: -0.20652497, y: -0.0000006866455, z: 0}
       rotation: {x: 0.0000000037252903, y: -0.000000007450581, z: 2.7755576e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Left Index 01
       parentName: Left Hand
-      position: {x: -0.2710262, y: -0.0007003784, z: 0.17211854}
+      position: {x: -0.20326965, y: -0.0005252838, z: 0.12908891}
       rotation: {x: 0.065584466, y: 0.06433325, z: 0.03587007, w: 0.99512476}
       scale: {x: 1.0000004, y: 1.0000001, z: 1}
     - name: Left Index 02
       parentName: Left Index 01
-      position: {x: -0.17372772, y: 0, z: 0.000000009536743}
+      position: {x: -0.13029578, y: 0, z: 0.000000007152557}
       rotation: {x: -0.001341112, y: 0.0009702295, z: 0.035599854, w: 0.99936473}
       scale: {x: 1.0000001, y: 1.0000002, z: 0.99999994}
     - name: Left Index 03
       parentName: Left Index 02
-      position: {x: -0.10665855, y: 0.0000008392334, z: -0.000000028610229}
+      position: {x: -0.07999391, y: 0.000000629425, z: -0.000000021457671}
       rotation: {x: -0.004653472, y: -0.005140971, z: 0.040877882, w: 0.99914014}
       scale: {x: 1.0000006, y: 1.0000006, z: 1.0000002}
     - name: Bone040
       parentName: Left Index 03
-      position: {x: -0.114395596, y: 0, z: 0.000000057220458}
+      position: {x: -0.0857967, y: 0, z: 0.000000042915342}
       rotation: {x: 0.00061911123, y: -0.00014528449, z: 0.0893702, w: 0.99599826}
       scale: {x: 0.99999994, y: 1.0000002, z: 0.99999994}
     - name: Left Middle 01
       parentName: Left Hand
-      position: {x: -0.2612527, y: 0.01701477, z: 0.04749129}
+      position: {x: -0.19593953, y: 0.012761077, z: 0.03561847}
       rotation: {x: -0.0030550214, y: 0.03792136, z: 0.023466282, w: 0.9990005}
       scale: {x: 1.0000007, y: 1.0000008, z: 0.9999999}
     - name: Left Middle 02
       parentName: Left Middle 01
-      position: {x: -0.20538995, y: 0, z: -0.000000007152557}
+      position: {x: -0.15404245, y: 0, z: -0.000000005364418}
       rotation: {x: -0.001416535, y: 0.0005044489, z: 0.035897907, w: 0.99935436}
       scale: {x: 1.000001, y: 1.0000008, z: 1.0000001}
     - name: Left Middle 03
       parentName: Left Middle 02
-      position: {x: -0.11327621, y: 0.0000009155273, z: -0.0000000023841857}
+      position: {x: -0.08495716, y: 0.0000006866455, z: -0.0000000017881393}
       rotation: {x: -0.004125373, y: -0.004381478, z: 0.03482104, w: 0.9993755}
       scale: {x: 1.0000011, y: 1.0000012, z: 0.9999999}
     - name: Bone028
       parentName: Left Middle 03
-      position: {x: -0.12610297, y: -0.000000076293944, z: 0.000000035762785}
+      position: {x: -0.09457722, y: -0.000000057220458, z: 0.00000002682209}
       rotation: {x: 0.0000003686872, y: -0.000000018626361, z: 0.00000023841855, w: 1}
       scale: {x: 0.99999994, y: 1.0000002, z: 0.99999994}
     - name: Left Ring 01
       parentName: Left Hand
-      position: {x: -0.24100079, y: 0.025911558, z: -0.074850634}
+      position: {x: -0.1807506, y: 0.01943367, z: -0.056137975}
       rotation: {x: -0.03868818, y: 0.03483076, z: 0.018346582, w: 0.9984756}
       scale: {x: 1.0000006, y: 1.0000004, z: 1.0000001}
     - name: Left Ring 02
       parentName: Left Ring 01
-      position: {x: -0.18637252, y: -0.000000076293944, z: 0.000000009536743}
+      position: {x: -0.13977939, y: -0.000000057220458, z: 0.000000007152557}
       rotation: {x: -0.0015183535, y: 0.0011250337, z: 0.03838441, w: 0.99926126}
       scale: {x: 1.0000008, y: 1.0000006, z: 0.99999964}
     - name: Left Ring 03
       parentName: Left Ring 02
-      position: {x: -0.10263611, y: 0.0000006866455, z: 0}
+      position: {x: -0.07697708, y: 0.0000005149841, z: 0}
       rotation: {x: -0.0041703354, y: -0.0029250947, z: 0.039708246, w: 0.9991984}
       scale: {x: 1.0000005, y: 1.0000007, z: 1.0000005}
     - name: Bone032
       parentName: Left Ring 03
-      position: {x: -0.11185463, y: -0.000000076293944, z: 0.000000038146972}
+      position: {x: -0.083890975, y: -0.000000057220458, z: 0.000000028610229}
       rotation: {x: 0.00042592338, y: 0.000041911277, z: 0.021680774, w: 0.99976486}
       scale: {x: 0.99999994, y: 1.0000002, z: 0.99999994}
     - name: Left Pink 01
       parentName: Left Hand
-      position: {x: -0.21775022, y: 0.009492188, z: -0.19509177}
+      position: {x: -0.16331267, y: 0.0071191406, z: -0.14631882}
       rotation: {x: -0.1210345, y: 0.03144341, z: 0.0154716605, w: 0.9920296}
       scale: {x: 0.9999999, y: 1.0000001, z: 1.0000001}
     - name: Left Pink 02
       parentName: Left Pink 01
-      position: {x: -0.12372238, y: -0.000000076293944, z: 0.000000009536743}
+      position: {x: -0.09279179, y: -0.000000057220458, z: 0.000000007152557}
       rotation: {x: -0.009786974, y: -0.003422145, z: 0.031919766, w: 0.9994367}
       scale: {x: 1.0000011, y: 1.0000008, z: 1}
     - name: Left Pink 03
       parentName: Left Pink 02
-      position: {x: -0.10393112, y: 0.0000008392334, z: 0.000000009536743}
+      position: {x: -0.07794834, y: 0.000000629425, z: 0.000000007152557}
       rotation: {x: -0.0050997697, y: -0.0042474815, z: 0.039054126, w: 0.99921507}
       scale: {x: 0.9999999, y: 1.0000001, z: 1.0000001}
     - name: Bone036
       parentName: Left Pink 03
-      position: {x: -0.096350394, y: 0.000000076293944, z: 0.000000085830685}
+      position: {x: -0.072262794, y: 0.000000057220458, z: 0.00000006437301}
       rotation: {x: -0.0003184403, y: 0.0000053821996, z: 0.017588196, w: 0.99984527}
       scale: {x: 0.9999999, y: 0.9999997, z: 0.9999998}
     - name: Left Thumb 01
       parentName: Left Hand
-      position: {x: -0.000000076293944, y: 0, z: 0.000000076293944}
+      position: {x: -0.000000057220458, y: 0, z: 0.000000057220458}
       rotation: {x: -0.7612399, y: 0.19189325, z: 0.42368573, w: 0.45186415}
       scale: {x: 1.0000007, y: 1.0000005, z: 0.99999976}
     - name: Left Thumb 02
       parentName: Left Thumb 01
-      position: {x: -0.4733481, y: -0.0000048828124, z: 0.000000114440915}
+      position: {x: -0.35501108, y: -0.0000036621093, z: 0.000000085830685}
       rotation: {x: 0.0069816676, y: 0.007794384, z: -0.027264567, w: 0.99957347}
       scale: {x: 1.0000004, y: 1.0000005, z: 1.0000004}
     - name: Left Thumb 03
       parentName: Left Thumb 02
-      position: {x: -0.08464455, y: 0, z: -0.000000038146972}
+      position: {x: -0.06348341, y: 0, z: -0.000000028610229}
       rotation: {x: -0.00014256776, y: 0.0012473046, z: -0.03796502, w: 0.9992783}
       scale: {x: 0.99999994, y: 1, z: 1.0000002}
     - name: Bone041
       parentName: Left Thumb 03
-      position: {x: -0.11511443, y: 0, z: 0.000000114440915}
+      position: {x: -0.08633582, y: 0, z: 0.000000085830685}
       rotation: {x: 0.00000001024455, y: -0.000000007450581, z: 7.6327846e-17, w: 1}
       scale: {x: 1, y: 0.9999999, z: 0.99999994}
     - name: Right Upper Leg
       parentName: Hips 1
-      position: {x: -0.13393264, y: -0.005400514, z: 0.17370604}
+      position: {x: -0.10044947, y: -0.0040503857, z: 0.13027953}
       rotation: {x: 0.02626461, y: -0.007908273, z: -0.9980487, w: -0.056093}
       scale: {x: 1.0000006, y: 1.0000006, z: 1.0000001}
     - name: Right Lower Leg
       parentName: Right Upper Leg
-      position: {x: -0.5694413, y: 0, z: 0.000000038146972}
+      position: {x: -0.427081, y: 0, z: 0.000000028610229}
       rotation: {x: -0.00066921435, y: 0.0011465654, z: 0.34414682, w: 0.9389149}
       scale: {x: 0.9999999, y: 1.0000001, z: 0.99999964}
     - name: Bone010
       parentName: Right Lower Leg
-      position: {x: -0.6030646, y: 0.000000076293944, z: 0.000000114440915}
+      position: {x: -0.45229846, y: 0.000000057220458, z: 0.000000085830685}
       rotation: {x: -0.000000057762318, y: -0.0000000010593821, z: 0.050563626, w: 0.9987209}
       scale: {x: 1.0000001, y: 1.0000001, z: 1}
     - name: Right Foot
       parentName: Bone010
-      position: {x: -0.0000007820129, y: 0.0000016021729, z: 0.00003644943}
+      position: {x: -0.00000058650966, y: 0.0000012016296, z: 0.000027337072}
       rotation: {x: 0.08727879, y: -0.029166363, z: -0.49425375, w: 0.86443335}
       scale: {x: 1, y: 1, z: 1.0000007}
     - name: Right Toe
       parentName: Right Foot
-      position: {x: -0.3700437, y: -0.000000038146972, z: -0.000000095367426}
+      position: {x: -0.27753276, y: -0.000000028610229, z: -0.00000007152557}
       rotation: {x: -0.00000046938652, y: -0.00000042095775, z: -0.3767215, w: 0.92632663}
       scale: {x: 0.9999998, y: 1.0000002, z: 0.99999994}
     - name: Bone013(mirrored)(mirrored)
       parentName: Right Toe
-      position: {x: -0.16509439, y: 0.000000085830685, z: 0}
+      position: {x: -0.1238208, y: 0.00000006437301, z: 0}
       rotation: {x: 0.000000009757793, y: 0.00000023930107, z: -0.031304013, w: 0.99950993}
       scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
     - name: Right Toe 05
       parentName: Bone013(mirrored)(mirrored)
-      position: {x: 0.011305617, y: -0.024669025, z: 0.08930042}
+      position: {x: 0.008479213, y: -0.01850177, z: 0.06697531}
       rotation: {x: -0.716883, y: 0.081300266, z: -0.027593628, w: 0.69188696}
       scale: {x: 1.0000011, y: 1.0000007, z: 1.0000002}
     - name: Right Toe 06
       parentName: Right Toe 05
-      position: {x: -0.08755836, y: -0.000000019073486, z: 0.0000000023841857}
+      position: {x: -0.06566877, y: -0.000000014305114, z: 0.0000000017881393}
       rotation: {x: 0.00046691287, y: -0.026525961, z: -0.0007802172, w: 0.9996478}
       scale: {x: 0.9999996, y: 0.9999998, z: 0.9999997}
     - name: Bone050(mirrored)
       parentName: Right Toe 06
-      position: {x: -0.04933075, y: -0.00000032424927, z: 0.0000000047683715}
+      position: {x: -0.036998063, y: -0.00000024318695, z: 0.0000000035762786}
       rotation: {x: 0.00065823854, y: -0.035143908, z: -0.0018138281, w: 0.9993804}
       scale: {x: 1.0000001, y: 1, z: 0.99999994}
     - name: Right Toe 07
       parentName: Bone013(mirrored)(mirrored)
-      position: {x: 0.03448997, y: -0.033623718, z: 0.15498333}
+      position: {x: 0.025867477, y: -0.025217788, z: 0.11623749}
       rotation: {x: -0.6922679, y: 0.11984112, z: 0.04076652, w: 0.71045154}
       scale: {x: 1.000001, y: 1.0000006, z: 1.0000006}
     - name: Right Toe 08
       parentName: Right Toe 07
-      position: {x: -0.070045084, y: 0.000000038146972, z: -0.0000000047683715}
+      position: {x: -0.052533813, y: 0.000000028610229, z: -0.0000000035762786}
       rotation: {x: 0.00047859538, y: 0.02237367, z: -0.00019042935, w: 0.9997496}
       scale: {x: 0.9999997, y: 0.99999976, z: 0.99999976}
     - name: Bone053(mirrored)
       parentName: Right Toe 08
-      position: {x: -0.050158687, y: -0.00000034332274, z: 0.000000009536743}
+      position: {x: -0.037619017, y: -0.00000025749205, z: 0.000000007152557}
       rotation: {x: 0.00041279886, y: -0.15424854, z: -0.001836925, w: 0.9880303}
       scale: {x: 1.0000001, y: 0.9999997, z: 1.0000001}
     - name: Right Toe 03
       parentName: Bone013(mirrored)(mirrored)
-      position: {x: 0.0032733153, y: -0.015048542, z: 0.026237678}
+      position: {x: 0.0024549863, y: -0.011286407, z: 0.019678257}
       rotation: {x: -0.7202979, y: 0.00076645735, z: -0.07322333, w: 0.68978906}
       scale: {x: 1.0000011, y: 1.0000011, z: 1.0000005}
     - name: Right Toe 04
       parentName: Right Toe 03
-      position: {x: -0.099332534, y: 0, z: -0.000000014305114}
+      position: {x: -0.0744994, y: 0, z: -0.000000010728836}
       rotation: {x: 0.00043717006, y: 0.0541774, z: -0.0015657798, w: 0.99853003}
       scale: {x: 1.0000001, y: 1, z: 1.0000004}
     - name: Bone047(mirrored)
       parentName: Right Toe 04
-      position: {x: -0.060142722, y: -0.00000045776366, z: 0.0000000023841857}
+      position: {x: -0.04510704, y: -0.00000034332274, z: 0.0000000017881393}
       rotation: {x: 0.00055359595, y: -0.09025483, z: -0.001767634, w: 0.995917}
       scale: {x: 1.0000001, y: 0.99999994, z: 0.99999994}
     - name: Right Toe 01
       parentName: Bone013(mirrored)(mirrored)
-      position: {x: 0.015473404, y: -0.013979158, z: -0.04913757}
+      position: {x: 0.011605053, y: -0.010484369, z: -0.03685318}
       rotation: {x: -0.7172457, y: -0.051185835, z: -0.1459338, w: 0.6794425}
       scale: {x: 1.0000005, y: 1.0000011, z: 1.0000007}
     - name: Right Toe 02
       parentName: Right Toe 01
-      position: {x: -0.098660335, y: 0.000000019073486, z: -0.000000009536743}
+      position: {x: -0.07399525, y: 0.000000014305114, z: -0.000000007152557}
       rotation: {x: 0.0012369449, y: 0.02651974, z: 0.014623459, w: 0.99954057}
       scale: {x: 0.99999964, y: 1.0000001, z: 0.99999964}
     - name: Bone044(mirrored)
       parentName: Right Toe 02
-      position: {x: -0.09156686, y: -0.00000053405756, z: -0.0000000047683715}
+      position: {x: -0.068675146, y: -0.00000040054317, z: -0.0000000035762786}
       rotation: {x: 0.00066767895, y: -0.029706703, z: -0.0018218819, w: 0.9995568}
       scale: {x: 1.0000001, y: 0.99999994, z: 1.0000002}
     - name: Bone079
       parentName: Right Foot
-      position: {x: 0.000000038146972, y: 0.000000019073486, z: -0.000000038146972}
+      position: {x: 0.000000028610229, y: 0.000000014305114, z: -0.000000028610229}
       rotation: {x: -0.7971318, y: -0.21098445, z: -0.08421933, w: 0.5594405}
       scale: {x: 1.0000005, y: 1.0000002, z: 1.0000006}
     - name: Bone080
       parentName: Bone079
-      position: {x: -0.28737605, y: -0.000000019073486, z: 0}
+      position: {x: -0.21553203, y: -0.000000014305114, z: 0}
       rotation: {x: -0.00710517, y: 0.18143532, z: 0.08818651, w: 0.9794151}
       scale: {x: 1, y: 1.0000006, z: 1}
     - name: Bone081
       parentName: Bone080
-      position: {x: -0.12900674, y: -0.000000019073486, z: 0.0000000047683715}
+      position: {x: -0.09675506, y: -0.000000014305114, z: 0.0000000035762786}
       rotation: {x: -0.014394228, y: 0.20322187, z: 0.00021913782, w: 0.9790269}
       scale: {x: 1.0000001, y: 1.0000006, z: 1.0000007}
     - name: Bone082
       parentName: Bone081
-      position: {x: -0.12521856, y: 0, z: 0.000000019073486}
+      position: {x: -0.09391391, y: 0, z: 0.000000014305114}
       rotation: {x: -0.022775803, y: -0.01378584, z: -0.031886123, w: 0.9991369}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
     - name: Left Upper Leg
       parentName: Hips 1
-      position: {x: -0.1339328, y: -0.0054005906, z: -0.17368011}
+      position: {x: -0.1004496, y: -0.004050443, z: -0.13026008}
       rotation: {x: -0.056093007, y: -0.9980487, z: -0.007908043, w: 0.026264723}
       scale: {x: 1.0000001, y: 0.9999997, z: 0.9999998}
     - name: Left Lower Leg
       parentName: Left Upper Leg
-      position: {x: -0.569441, y: 0.000000038146972, z: 0.000000076293944}
+      position: {x: -0.42708075, y: 0.000000028610229, z: 0.000000057220458}
       rotation: {x: -0.00067105534, y: -0.0011348852, z: 0.3441481, w: -0.9389145}
       scale: {x: 1.0000012, y: 1, z: 1.0000006}
     - name: Bone010(mirrored)
       parentName: Left Lower Leg
-      position: {x: -0.60306466, y: -0.000000038146972, z: -0.00000019073485}
+      position: {x: -0.4522985, y: -0.000000028610229, z: -0.00000014305114}
       rotation: {x: 0.00000005683348, y: -0.0000002956873, z: -0.050563708, w: 0.9987209}
       scale: {x: 0.9999999, y: 1.0000002, z: 1.0000001}
     - name: Left Foot
       parentName: Bone010(mirrored)
-      position: {x: -0.0000014305114, y: -0.0000030517576, z: 0.00006273269}
+      position: {x: -0.0000010728835, y: -0.0000022888182, z: 0.000047049514}
       rotation: {x: 0.087279096, y: 0.029154016, z: -0.4942562, w: -0.86443233}
       scale: {x: 1, y: 1.0000002, z: 1.0000001}
     - name: Left Toe
       parentName: Left Foot
-      position: {x: -0.37004372, y: 0.000000057220458, z: -0.000000076293944}
+      position: {x: -0.2775328, y: 0.000000042915342, z: -0.000000057220458}
       rotation: {x: 0.0000001005828, y: -0.00000017881388, z: 0.37672123, w: 0.92632663}
       scale: {x: 1.0000007, y: 1.0000007, z: 1.0000008}
     - name: Bone013(mirrored)
       parentName: Left Toe
-      position: {x: -0.16509436, y: -0.000000104904174, z: 0.000000019073486}
+      position: {x: -0.12382077, y: -0.00000007867813, z: 0.000000014305114}
       rotation: {x: -0.000000004572657, y: 0.00000023757764, z: 0.03130401, w: 0.99950993}
       scale: {x: 1.0000001, y: 1.0000001, z: 0.9999999}
     - name: Left Toe 05
       parentName: Bone013(mirrored)
-      position: {x: 0.011299381, y: 0.024667367, z: 0.089332}
+      position: {x: 0.008474536, y: 0.018500526, z: 0.066999}
       rotation: {x: -0.716883, y: -0.0813005, z: -0.027593402, w: -0.691887}
       scale: {x: 1.0000002, y: 1.0000005, z: 0.99999994}
     - name: Left Toe 06
       parentName: Left Toe 05
-      position: {x: -0.08755836, y: 0, z: 0}
+      position: {x: -0.06566877, y: 0, z: 0}
       rotation: {x: -0.0004671513, y: -0.026525859, z: 0.0007802693, w: 0.9996478}
       scale: {x: 1.0000008, y: 1.0000012, z: 1.0000007}
     - name: Bone050
       parentName: Left Toe 06
-      position: {x: -0.04933067, y: 0.00000032424927, z: 0}
+      position: {x: -0.036998004, y: 0.00000024318695, z: 0}
       rotation: {x: -0.00065800303, y: -0.035143968, z: 0.0018137908, w: 0.9993804}
       scale: {x: 1, y: 1, z: 1}
     - name: Left Toe 07
       parentName: Bone013(mirrored)
-      position: {x: 0.034487206, y: 0.033623, z: 0.15499702}
+      position: {x: 0.025865406, y: 0.02521725, z: 0.116247766}
       rotation: {x: -0.6922677, y: -0.11984136, z: 0.04076647, w: -0.7104517}
       scale: {x: 1.0000006, y: 1.0000007, z: 1.0000004}
     - name: Left Toe 08
       parentName: Left Toe 07
-      position: {x: -0.07004507, y: 0, z: 0}
+      position: {x: -0.0525338, y: 0, z: 0}
       rotation: {x: -0.00047856558, y: 0.02237382, z: 0.00019034739, w: 0.9997496}
       scale: {x: 0.99999994, y: 1.0000004, z: 0.99999994}
     - name: Bone053
       parentName: Left Toe 08
-      position: {x: -0.050158765, y: 0.00000030517577, z: 0.0000000047683715}
+      position: {x: -0.037619073, y: 0.00000022888183, z: 0.0000000035762786}
       rotation: {x: -0.00041277718, y: -0.15424867, z: 0.0018371223, w: 0.98803025}
       scale: {x: 1, y: 1, z: 1}
     - name: Left Toe 03
       parentName: Bone013(mirrored)
-      position: {x: 0.003270931, y: 0.015047874, z: 0.026249237}
+      position: {x: 0.0024531982, y: 0.011285906, z: 0.019686928}
       rotation: {x: -0.720298, y: -0.0007667733, z: -0.07322319, w: -0.68978894}
       scale: {x: 1.0000007, y: 1.0000012, z: 1.0000005}
     - name: Left Toe 04
       parentName: Left Toe 03
-      position: {x: -0.09933258, y: 0, z: 0}
+      position: {x: -0.074499436, y: 0, z: 0}
       rotation: {x: -0.00043719995, y: 0.05417773, z: 0.0015660595, w: 0.99853003}
       scale: {x: 1, y: 0.9999999, z: 1}
     - name: Bone047
       parentName: Left Toe 04
-      position: {x: -0.06014278, y: 0.0000003814697, z: 0}
+      position: {x: -0.045107085, y: 0.00000028610228, z: 0}
       rotation: {x: -0.00055359775, y: -0.09025486, z: 0.0017676228, w: 0.995917}
       scale: {x: 1, y: 1, z: 1}
     - name: Left Toe 01
       parentName: Bone013(mirrored)
-      position: {x: 0.015474338, y: 0.013979377, z: -0.049143083}
+      position: {x: 0.011605754, y: 0.010484533, z: -0.036857314}
       rotation: {x: -0.71724546, y: 0.051185645, z: -0.145934, w: -0.6794425}
       scale: {x: 1.000001, y: 1.0000002, z: 1.0000002}
     - name: Left Toe 02
       parentName: Left Toe 01
-      position: {x: -0.098660335, y: -0.000000019073486, z: 0}
+      position: {x: -0.07399525, y: -0.000000014305114, z: 0}
       rotation: {x: -0.0012370643, y: 0.026519734, z: -0.014623666, w: 0.9995405}
       scale: {x: 1.0000008, y: 1.0000007, z: 1.0000005}
     - name: Bone044
       parentName: Left Toe 02
-      position: {x: -0.091566846, y: 0.00000057220456, z: 0}
+      position: {x: -0.06867513, y: 0.00000042915343, z: 0}
       rotation: {x: -0.0006675447, y: -0.02970669, z: 0.0018218869, w: 0.9995568}
       scale: {x: 1, y: 1, z: 1}
     - name: Bone079(mirrored)
       parentName: Left Foot
-      position: {x: -0.000000114440915, y: 0.000000066757195, z: -0.00000019073485}
+      position: {x: -0.000000085830685, y: 0.000000050067896, z: -0.00000014305114}
       rotation: {x: -0.7971312, y: 0.21098424, z: -0.08421969, w: -0.55944145}
       scale: {x: 1.0000005, y: 1.0000012, z: 1.0000004}
     - name: Bone080(mirrored)
       parentName: Bone079(mirrored)
-      position: {x: -0.28737608, y: 0.000000023841856, z: 0.000000047683713}
+      position: {x: -0.21553206, y: 0.000000017881392, z: 0.000000035762785}
       rotation: {x: 0.00710517, y: 0.18143515, z: -0.08818651, w: 0.9794151}
       scale: {x: 0.99999917, y: 0.9999995, z: 0.99999976}
     - name: Bone081(mirrored)
       parentName: Bone080(mirrored)
-      position: {x: -0.12900673, y: -0.000000009536743, z: -0.000000019073486}
+      position: {x: -0.09675504, y: -0.000000007152557, z: -0.000000014305114}
       rotation: {x: 0.014394555, y: 0.20322166, z: -0.00021884445, w: 0.9790269}
       scale: {x: 1.0000004, y: 1.0000001, z: 1}
     - name: Bone082(mirrored)
       parentName: Bone081(mirrored)
-      position: {x: -0.12521861, y: 0.000000057220458, z: -0.000000023841856}
+      position: {x: -0.09391396, y: 0.000000042915342, z: -0.000000017881392}
       rotation: {x: 0.022776073, y: -0.013785958, z: 0.031886008, w: 0.9991369}
       scale: {x: 1.0000005, y: 1.0000001, z: 1.0000004}
     - name: Bone073
       parentName: Hips 1
-      position: {x: -0.1430223, y: -0.2438158, z: 6.82121e-15}
+      position: {x: -0.107266724, y: -0.18286185, z: 5.1159075e-15}
       rotation: {x: -0.00000017881393, y: -0.00000052154064, z: -0.9993864, w: -0.035025347}
       scale: {x: 0.9999997, y: 0.99999976, z: 0.9999998}
     - name: Bone074
       parentName: Bone073
-      position: {x: -0.08989593, y: 0, z: 0.000000005347174}
+      position: {x: -0.06742194, y: 0, z: 0.0000000040103805}
       rotation: {x: -0.00000045564954, y: 0.000000035049386, z: -0.09445457, w: 0.9955292}
       scale: {x: 1.0000013, y: 1.0000011, z: 1.0000008}
     - name: Bone075
       parentName: Bone074
-      position: {x: -0.15116973, y: 0, z: -1.364242e-14}
+      position: {x: -0.1133773, y: 0, z: -1.0231815e-14}
       rotation: {x: 0.00000005845643, y: 0.000000016066648, z: 0.0056181396, w: 0.9999842}
       scale: {x: 1, y: 0.9999998, z: 1.0000006}
     - name: Bone078
       parentName: Bone075
-      position: {x: -0.14798148, y: 0, z: 0}
+      position: {x: -0.11098611, y: 0, z: 0}
       rotation: {x: -0.000000022986786, y: -0.000000020146805, z: 0.06068994, w: 0.9981567}
       scale: {x: 0.99999994, y: 1, z: 0.99999994}
     - name: Bone076
       parentName: Bone078
-      position: {x: -0.14449494, y: 0.000000076293944, z: 0.00000003761272}
+      position: {x: -0.1083712, y: 0.000000057220458, z: 0.000000028209538}
       rotation: {x: -0.0000000029702445, y: -0.00000008299868, z: 0.122253425, w: 0.99249893}
       scale: {x: 1.0000006, y: 1.0000004, z: 1.0000005}
     - name: Bone077
       parentName: Bone076
-      position: {x: -0.17475395, y: 1.1368684e-15, z: 0}
+      position: {x: -0.13106546, y: 8.5265126e-16, z: 0}
       rotation: {x: -0.00009727384, y: -0.0051494786, z: -0.08700357, w: 0.9961947}
       scale: {x: 1, y: 1, z: 1}
     - name: Bone068
       parentName: Hips 1
-      position: {x: -0.19201827, y: 0.26322517, z: -1.1368684e-15}
+      position: {x: -0.1440137, y: 0.19741887, z: -8.5265126e-16}
       rotation: {x: -0.00000006903428, y: -0.00000012479721, z: -0.992956, w: 0.11848375}
       scale: {x: 1.0000005, y: 1.0000005, z: 0.99999994}
     - name: Bone069
       parentName: Bone068
-      position: {x: -0.1678125, y: -0.000000038146972, z: 0.0000000022335005}
+      position: {x: -0.12585938, y: -0.000000028610229, z: 0.0000000016751254}
       rotation: {x: 0.000000044703484, y: -0.000000029802322, z: 0.031559005, w: 0.99950194}
       scale: {x: 0.99999976, y: 0.9999999, z: 0.99999976}
     - name: Bone070
       parentName: Bone069
-      position: {x: -0.14268509, y: 0, z: 0.000000002550787}
+      position: {x: -0.107013814, y: 0, z: 0.0000000019130901}
       rotation: {x: 0.000000010965876, y: -0.00000005113786, z: -0.010515458, w: 0.9999447}
       scale: {x: 0.9999998, y: 0.99999994, z: 1.0000004}
     - name: Bone071
       parentName: Bone070
-      position: {x: -0.18208006, y: 0, z: 0.000000003769255}
+      position: {x: -0.13656005, y: 0, z: 0.0000000028269413}
       rotation: {x: -0.00000004779911, y: -0.000000001655728, z: -0.0841911, w: 0.9964497}
       scale: {x: 1.0000004, y: 1.0000002, z: 1.0000008}
     - name: Bone072
       parentName: Bone071
-      position: {x: -0.19559653, y: 0, z: 0.0000000012063355}
+      position: {x: -0.1466974, y: 0, z: 9.047516e-10}
       rotation: {x: 4.5169773e-18, y: -2.2199865e-16, z: 0.020342657, w: 0.99979305}
       scale: {x: 1, y: 1, z: 1}
     - name: Troll
       parentName: Troll(Clone)
-      position: {x: -0, y: 0, z: 0.000000038146972}
+      position: {x: -0, y: 0, z: 0.000000028610229}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5

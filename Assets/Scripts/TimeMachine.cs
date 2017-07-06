@@ -21,7 +21,10 @@ public class TimeMachine : MonoBehaviour {
 	[SerializeField] private Image		levelTime;
 	[SerializeField] private float 		totalTime = 60.0f;
 	[SerializeField] private Image		levelWaitTime;
+	[SerializeField] private Image		levelWaitTimeHUD;
+	[SerializeField] private Text 		textWaitTime;
 	[SerializeField] private float		waitTime = 5.0f;
+	private AudioSource sourse;
 
 
 	//	Private Variables
@@ -56,6 +59,7 @@ public class TimeMachine : MonoBehaviour {
 		// Level
 		levelTime.fillAmount = 0;
 		levelWaitTime.fillAmount = 0;
+		sourse = levelTime.transform.parent.GetComponent<AudioSource> ();
 
 
 	}
@@ -64,12 +68,17 @@ public class TimeMachine : MonoBehaviour {
 
 	//Public Methods
 
-	public void AddAction( Vector3 dir, Vector3 pos, bool hold, bool jump){
+	public void AddAction( Vector3 dir, Vector3 pos, bool hold){
 
 		time_c = Time.time - time_i;
-		if(time_c > delay && !traveling)
-			travelList [index].AddAction (dir, pos, time_c, hold, jump);
-
+		if (time_c > delay && !traveling) {
+			travelList [index].AddAction (dir, pos, time_c, hold);
+			for (int i = 0; i < index && traveling; i++) {
+				if (!enableList [i]) {
+					travelList [i].AddNullAction (transform.position,time_c);
+				}
+			}
+		}
 	}
 		
 	public void MoveFormers (){
@@ -78,11 +87,47 @@ public class TimeMachine : MonoBehaviour {
 
 		// Level
 		if (traveling) {
-			levelTime.fillAmount = time_c / totalTime;
-			levelWaitTime.fillAmount = 1 -time_c / waitTime;
+			levelTime.fillAmount = 0;
+			levelWaitTime.fillAmount =  1;
+			levelWaitTime.fillAmount = 1;
 		} else {
-			levelTime.fillAmount = 1 - time_c / totalTime;
-			levelWaitTime.fillAmount = time_c / waitTime;
+			float aux = time_c / totalTime;
+			levelTime.fillAmount = aux;
+			if (levelTime.fillAmount > 0.75f) {
+				sourse.pitch = 1f + Mathf.Clamp01 ((aux - 0.75f) / (0.25f)) * 0.6f;
+				sourse.volume = 0.3f + Mathf.Clamp01 ((aux - 0.75f) / (0.25f)) * 0.5f;
+			} else {
+				sourse.pitch = 1;
+			}
+			if (levelTime.fillAmount > 0.82f) {
+				levelTime.color = new Color (
+					1,
+					(1-(aux-0.82f)/(0.18f)),
+					(1-(aux-0.82f)/(0.18f)),
+					(0.8f+(aux/5))
+				); 
+			} else {
+
+				levelTime.color = new Color (1, 1, 1, (0.8f+(aux/5)));
+			}
+
+			if (travelNum > 0) {
+				levelWaitTime.fillAmount = time_c / waitTime;
+				levelWaitTimeHUD.fillAmount = time_c / waitTime;
+				textWaitTime.text = travelNum.ToString ();
+
+				if (levelWaitTimeHUD.fillAmount < 0.98) {
+					levelWaitTimeHUD.color = new Color ((40f / 255f), (145f / 255f), 0, (150f / 255f));
+				} else {
+					levelWaitTimeHUD.color = new Color (1, 1, 1);
+					if ((time_c / waitTime) < 1)
+						levelWaitTimeHUD.transform.GetComponent<Animator> ().SetTrigger ("Scale");
+				}
+			} else {
+				levelWaitTime.fillAmount =  0;
+				levelWaitTimeHUD.fillAmount = 0;
+				textWaitTime.text = travelNum.ToString ();
+			}
 		}
 
 
@@ -92,7 +137,7 @@ public class TimeMachine : MonoBehaviour {
 					if (enableList [i]) {
 						travelList [i].AdjustPosition (formerList [i]);
 						Action aux = travelList [i].GetAction ();
-						formerList [i].GetComponent<Movement> ().Move (aux.GetDirection (), aux.GetHold (), aux.GetJump ());
+						formerList [i].GetComponent<Movement> ().Move (aux.GetDirection (), aux.GetHold ());
 					} else {
 						if (travelList [i].IsEnable ()) {
 							enableList [i] = true;
@@ -113,18 +158,18 @@ public class TimeMachine : MonoBehaviour {
 						Action aux = travelList [i].GetAction ();
 						formerList [i].GetComponent<Movement> ().Move (
 							aux.GetDirection (),
-							aux.GetHold (),
-							aux.GetJump ()
+							aux.GetHold ()
 						);
 					} else {
 						formerList [i].GetComponent<Movement> ().Move (
 							Vector3.zero,
-							false,
 							false
 						);
+						enableList [i] = false;
+						Disable (formerList[i]);
 					}
 				} else {
-					travelList [i].AddNullAction (transform.position,time_c);
+					//travelList [i].AddNullAction (transform.position,time_c);
 				}
 			}
 		}
@@ -201,6 +246,12 @@ public class TimeMachine : MonoBehaviour {
 			model.GetComponent<Controller> ().MovementActive = true;
 	}
 
+	public bool IsTraveling(){
+		return traveling;
+	}
+	public void DecreaseTotalTime (float timeMinus){
+		totalTime -= timeMinus;
+	}
 
 
 	//	Trigger Methods
@@ -223,6 +274,11 @@ public class TimeMachine : MonoBehaviour {
 		//	If the traveller has exit the flag change.
 		if( travellerInside && other.gameObject == traveller )
 			travellerInside = false;
+	}
+
+	public void TimeTravel(){
+		if (travelNum > 0 && time_c > delay && !traveling)
+			BegingTimeTravel ();
 	}
 		
 }

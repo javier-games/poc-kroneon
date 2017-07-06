@@ -28,11 +28,11 @@ namespace Kroneon.Li{
 
 		//	Methods
 
-		public void AddAction( Vector3 dir, Vector3 pos, float time, bool hold, bool jump){
-			actionList.Add (new Action(dir,pos,time,hold,jump,true));
+		public void AddAction( Vector3 dir, Vector3 pos, float time, bool hold){
+			actionList.Add (new Action(dir,pos,time,hold,true));
 		}
 		public void AddNullAction(Vector3 pos, float time){
-			actionList.Add (new Action(Vector3.zero,pos,time,false,false,false));
+			actionList.Add (new Action(Vector3.zero,pos,time,false,false));
 			count++;
 			final++;
 			index++;
@@ -47,7 +47,6 @@ namespace Kroneon.Li{
 				Vector3.zero,
 				actionList [count - 1].GetPosition(),
 				actionList [count - 1].GetTime(),
-				false,
 				false,
 				true
 			);

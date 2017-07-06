@@ -12,17 +12,15 @@ namespace Kroneon.Li{
 		private Vector3 dir ;		// Stores the control of direction that was did it by Li 
 		private Vector3 pos ;		// Stores the position of the action
 		private float	time;		// The moment in time when Li did the action
-		private bool 	hold;		// Stores the control of hold that was did it by Li  
-		private bool 	jump;		// Stores the control of jump that was did it by Li
+		private bool 	hold;		// Stores the control of hold that was did it by Li
 		private bool	enable;		// Determinate if the former is enable.
 
 		//	Constructor
-		public Action(Vector3 dir, Vector3 pos, float time, bool hold, bool jump, bool enable){
+		public Action(Vector3 dir, Vector3 pos, float time, bool hold, bool enable){
 			//Initialization
 			this.dir  	= dir ;
 			this.pos  	= pos ;
 			this.hold 	= hold;
-			this.jump 	= jump;
 			this.time 	= time;
 			this.enable = enable;
 		}
@@ -33,9 +31,6 @@ namespace Kroneon.Li{
 		}
 		public bool GetHold(){
 			return hold;
-		}
-		public bool GetJump(){
-			return jump;
 		}
 		public float GetTime(){
 			return time;
@@ -49,7 +44,7 @@ namespace Kroneon.Li{
 
 		// Debuging Methods
 		public void PrintAction(){
-			Debug.Log (dir + " " + pos + " " + time + " " + hold + " " + jump);
+			Debug.Log (dir + " " + pos + " " + time + " " + hold);
 		}
 
 	}
