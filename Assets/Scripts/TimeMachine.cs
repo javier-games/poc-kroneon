@@ -24,6 +24,8 @@ public class TimeMachine : MonoBehaviour {
 	[SerializeField] private Image		levelWaitTimeHUD;
 	[SerializeField] private Text 		textWaitTime;
 	[SerializeField] private float		waitTime = 5.0f;
+	[SerializeField] private ManagerScenes level;
+	private bool stopCounting = false;
 	private AudioSource sourse;
 
 
@@ -128,6 +130,9 @@ public class TimeMachine : MonoBehaviour {
 				levelWaitTimeHUD.fillAmount = 0;
 				textWaitTime.text = travelNum.ToString ();
 			}
+		}
+		if (levelTime.fillAmount >= 1 && !stopCounting) {
+			level.Reload ();
 		}
 
 
@@ -279,6 +284,10 @@ public class TimeMachine : MonoBehaviour {
 	public void TimeTravel(){
 		if (travelNum > 0 && time_c > delay && !traveling)
 			BegingTimeTravel ();
+	}
+
+	public void StopCounting(){
+		stopCounting = true;
 	}
 		
 }
