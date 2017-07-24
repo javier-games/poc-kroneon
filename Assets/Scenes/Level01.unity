@@ -929,7 +929,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.02, y: 0.85}
   m_AnchorMax: {x: 0.02, y: 0.99}
-  m_AnchoredPosition: {x: -303.21375, y: 152.30975}
+  m_AnchoredPosition: {x: -303.21375, y: 152.30997}
   m_SizeDelta: {x: 215, y: 69.95285}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &304522687
@@ -3400,6 +3400,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 904f2607ebfe84fdd99219aff58af283, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 904f2607ebfe84fdd99219aff58af283, type: 2}
   m_IsPrefabParent: 0
@@ -4190,7 +4194,8 @@ MonoBehaviour:
   formerPrefab: {fileID: 1826600422698124, guid: a0cc85d38c383410ab97edc67ddc8cc1,
     type: 2}
   minDistance: 3
-  waitingTime: 5
+  travelTime: 0
+  chargingTime: 5
   currentTime: 0
 --- !u!65 &1941305693
 BoxCollider:

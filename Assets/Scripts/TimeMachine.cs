@@ -20,18 +20,21 @@ public class TimeMachine : MonoBehaviour {
 	private GameObject formerPrefab;
 
 
+	private MachineState 	state;
 	private List<Transform> formerList;
-	private List<Travel> travelList;
-	private int index = 0;
-	private MachineState state;
+	private List<Travel> 	travelList;
+	private int 			index = 0;
+	private Animator 		animator;
 
 	[SerializeField]
-	private float minDistance = 1f;
+	private float minDistance	= 1f;
 	[SerializeField]
-	private float waitingTime = 5f;
+	private float travelTime	= 5f;
 	[SerializeField]
-	private float currentTime = 0f;
-	private float initialTime = 0f;
+	private float chargingTime	= 5f;
+	[SerializeField]
+	private float currentTime 	= 0f;
+	private float initialTime 	= 0f;
 
 
 
@@ -44,6 +47,7 @@ public class TimeMachine : MonoBehaviour {
 		travelList = new List<Travel> ();
 		travelList.Add (new Travel());
 		formerList = new List<Transform> ();
+		animator = GetComponent<Animator> ();
 	}
 
 	public void ChangeStateTo(MachineState state){
@@ -58,19 +62,20 @@ public class TimeMachine : MonoBehaviour {
 	public void UpdateTime(){
 		currentTime = Time.time - initialTime;
 
-		if (Vector3.Distance (transform.position, traveller.position)>minDistance &&
-			state == MachineState.Charging && currentTime > waitingTime) {
-			Debug.Log (Vector3.Distance (transform.position, traveller.position) +" " + minDistance +" "+
-				state +" "+ MachineState.Charging +" "+ currentTime +" "+ waitingTime);
+		if (Vector3.Distance (transform.position, traveller.position) > minDistance &&
+			state == MachineState.Charging && currentTime > chargingTime) {
 			ChangeStateTo (MachineState.Ready);
-			travelList [index].AddAction (traveller.position,0f);
-			travelList [index].AddAction (traveller.GetComponent<PickingController>().GetDestination(),currentTime);
+			travelList [index].SetStartTime (currentTime);
+			travelList [index].AddAction (traveller.position,0f,true);
+			travelList [index].AddAction (traveller.GetComponent<PickingController>().GetDestination(),0.01f,true);
+			animator.SetTrigger ("Close");
 		}
 	}
 
 	public void AddActionAt(Vector3 point){
-		if (currentTime > waitingTime && state == MachineState.Ready)
-			travelList [index].AddAction (traveller.position,currentTime);
+		if (currentTime > chargingTime && state == MachineState.Ready) {
+			travelList [index].AddAction (traveller.position, currentTime);
+		}
 	}
 
 	public void MoveFormers(){
@@ -79,11 +84,12 @@ public class TimeMachine : MonoBehaviour {
 		} else {
 			for (int i = 0; i < index; i++) {
 				if (travelList [i].TimeToSetDestination (currentTime)) {
-					formerList [i].GetComponent<FormerController> ().SetDestination (travelList[i].GetAction().GetPosition());
+					formerList [i].GetComponent<FormerController> ().SetDestination (travelList [i].GetAction ().GetPosition ());
+				} else {
+					Debug.Log ("Its Time has finished");
 				}
 			}
 		}
-		
 	}
 
 	public void TimeTravel(){
@@ -110,18 +116,33 @@ public class TimeMachine : MonoBehaviour {
 			}
 			index++;
 
-			StartCoroutine ("StopTimeTravel", 0f);
+			StartCoroutine ("StopTimeTravel", travelTime);
 		}
 	}
 
 	IEnumerator StopTimeTravel(float timeToWait){
 		yield return new WaitForSeconds (timeToWait);
-		state = MachineState.Charging;
 
+		state = MachineState.Charging;
 		initialTime = Time.time;
 		traveller.gameObject.SetActive (true);
+		animator.SetTrigger ("Open");
 	}
 
+	private void Disable(Transform model){
+		model.GetComponentInChildren<SkinnedMeshRenderer> ().enabled =false;
+		model.GetComponent<CapsuleCollider>().enabled = false;
+		model.GetComponent<Rigidbody>().isKinematic = true;
+		if(model.name == traveller.name)
+			model.GetComponent<PickingController> ().SetMovemenActive(false);
+	}
+	private void Enable(Transform model){
+		model.GetComponentInChildren<SkinnedMeshRenderer> ().enabled =true;
+		model.GetComponent<Rigidbody>().isKinematic = false;
+		model.GetComponent<CapsuleCollider>().enabled = true;
+		if(model.name == traveller.name)
+			model.GetComponent<PickingController> ().SetMovemenActive(true);
+	}
 
 
 
@@ -136,6 +157,7 @@ public class TimeMachine : MonoBehaviour {
 
 
 	/*
+	 *
 	public static TimeMachine instance;
 
 	[SerializeField] private GameObject	traveller;			//	The current character with movemoent
