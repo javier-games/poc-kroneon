@@ -17,6 +17,8 @@ public class UIManager : MonoBehaviour {
 	private GameObject gameOverPanel;
 	[SerializeField]
 	private GameObject startPanel;
+	[SerializeField]
+	private GameObject winPanel;
 
 
 
@@ -40,10 +42,10 @@ public class UIManager : MonoBehaviour {
 		pausePanel.SetActive (false);
 		gameOverPanel.SetActive (false);
 		startPanel.SetActive (false);
+		winPanel.SetActive (false);
 	}
 	public  void StartGame(){
 		GameManager.instance.ChangeToNewState (GameState.PLAYING);
-		Debug.Log (GameManager.instance.currentState);
 	}
 	public void Pause(){
 		GameManager.instance.ChangeToNewState (GameState.PAUSE);
@@ -102,6 +104,12 @@ public class UIManager : MonoBehaviour {
 
 		case GameState.RESTART:
 			StartCoroutine ("LoadScene", 0f);
+			break;
+
+		case GameState.WIN:
+			ClearUI ();
+			winPanel.SetActive (true);
+			StartCoroutine ("LoadScene", 4f);
 			break;
 		}
 	}

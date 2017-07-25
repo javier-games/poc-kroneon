@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 
-public enum GameState{LOADING, START, PLAYING, GAME_OVER, PAUSE, CONTINUE, CUTSCENE, EXIT,RESTART}
+public enum GameState{LOADING, START, PLAYING, GAME_OVER, PAUSE, CONTINUE, CUTSCENE, EXIT,RESTART,WIN}
 public class GameManager : MonoBehaviour {
 
 	public static GameManager instance;
 	public GameState currentState;
-	public delegate void ChangeState();
 
+	public delegate void ChangeState();
 	public ChangeState ChangeStateEvent;
 
 	void Awake(){
@@ -24,7 +24,6 @@ public class GameManager : MonoBehaviour {
 	}
 
 	private void NewStateEvent(){
-		Debug.Log ("New game state: "+currentState);
+		//Debug.Log ("New game state: "+currentState);
 	}
-
 }

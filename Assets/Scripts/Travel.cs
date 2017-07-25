@@ -25,6 +25,9 @@ public class Travel{
 	public Action GetAction(int i){
 		return actionList [i];
 	}
+	public float GetStartTime(){
+		return startTime;
+	}
 	public void SetIndex(int index){
 		this.index = index;
 	}
