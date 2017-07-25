@@ -78,8 +78,10 @@ public class TimeMachine : MonoBehaviour {
 		model.GetComponentInChildren<SkinnedMeshRenderer> ().enabled =false;
 		model.GetComponent<CapsuleCollider>().enabled = false;
 		model.GetComponent<Rigidbody>().isKinematic = true;
-		if(model.name == traveller.name)
-			model.GetComponent<PickingController> ().SetMovemenActive(false);
+		if (model.name == traveller.name)
+			model.GetComponent<PickingController> ().SetMovemenActive (false);
+		else
+			model.GetComponent<FormerController> ().DisableSpotLight ();
 	}
 	private void Enable(Transform model){
 		model.GetComponentInChildren<SkinnedMeshRenderer> ().enabled =true;
@@ -87,6 +89,8 @@ public class TimeMachine : MonoBehaviour {
 		model.GetComponent<CapsuleCollider>().enabled = true;
 		if(model.name == traveller.name)
 			model.GetComponent<PickingController> ().SetMovemenActive(true);
+		else
+			model.GetComponent<FormerController> ().EnableSpotLight ();
 	}
 
 

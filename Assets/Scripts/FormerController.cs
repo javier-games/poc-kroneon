@@ -6,6 +6,8 @@ public class FormerController : MonoBehaviour {
 	
 	[SerializeField]
 	private float minDistanceToTarget = 0.2f;
+	[SerializeField]
+	private Transform spotLight;
 
 	private NavMeshAgent	agent;
 	private Quaternion		rotation;
@@ -52,5 +54,12 @@ public class FormerController : MonoBehaviour {
 
 	public void SetMovemenActive(bool stade){
 		movementActive = stade;
+	}
+
+	public void EnableSpotLight(){
+		spotLight.gameObject.SetActive (true);
+	}
+	public void DisableSpotLight(){
+		spotLight.gameObject.SetActive (false);
 	}
 }
