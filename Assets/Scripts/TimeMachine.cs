@@ -86,7 +86,7 @@ public class TimeMachine : MonoBehaviour {
 				if (travelList [i].TimeToSetDestination (currentTime)) {
 					formerList [i].GetComponent<FormerController> ().SetDestination (travelList [i].GetAction ().GetPosition ());
 				} else {
-					Debug.Log ("Its Time has finished");
+					Disable (formerList[i]);
 				}
 			}
 		}
@@ -126,6 +126,9 @@ public class TimeMachine : MonoBehaviour {
 		state = MachineState.Charging;
 		initialTime = Time.time;
 		traveller.gameObject.SetActive (true);
+		for (int i = 0; i < index; i++) {
+			Enable (formerList[i]);
+		}
 		animator.SetTrigger ("Open");
 	}
 
