@@ -50,6 +50,7 @@ public class TimeMachine : MonoBehaviour {
 		travelList.Add (new Travel());
 		formerList = new List<Transform> ();
 		animator = GetComponent<Animator> ();
+		initialTime = Time.time;
 	}
 
 

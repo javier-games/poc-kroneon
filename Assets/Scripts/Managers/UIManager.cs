@@ -60,7 +60,7 @@ public class UIManager : MonoBehaviour {
 		GameManager.instance.ChangeToNewState (GameState.EXIT);
 	}
 	public void ReStart(){
-		GameManager.instance.ChangeToNewState (GameState.RESTART);
+		GameManager.instance.ChangeToNewState (GameState.START);
 	}
 
 
@@ -116,6 +116,8 @@ public class UIManager : MonoBehaviour {
 
 	public IEnumerator LoadScene(float timeToWait){
 		yield return new WaitForSeconds (timeToWait);
-		SceneManager.LoadScene ("Level01");
+		ClearUI ();
+		ReStart ();
+		SceneManager.LoadScene ("Level01",LoadSceneMode.Single);
 	}
 }

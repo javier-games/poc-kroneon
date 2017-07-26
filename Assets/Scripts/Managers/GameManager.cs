@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void Start () {
+		currentState = GameState.START;
 	}
 
 	public void ChangeToNewState(GameState newState){

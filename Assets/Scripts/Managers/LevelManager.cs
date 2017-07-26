@@ -36,6 +36,7 @@ public class LevelManager : MonoBehaviour {
 		switch(GameManager.instance.currentState){
 		case GameState.START:
 			StopCoroutine ("TimeUpdate");
+			gameTimeAmount = gameTime;
 			break;
 		case GameState.CUTSCENE:
 			StopCoroutine ("TimeUpdate");
@@ -83,11 +84,12 @@ public class LevelManager : MonoBehaviour {
 	private IEnumerator TimeUpdate(float timeToWait){
 		yield return new WaitForSeconds (timeToWait);
 		ChangedTimeEvent ();
-		if (gameTimeAmount - TimeMachine.instance.GetCurrentTime() < 0f) {
+		if (gameTimeAmount - TimeMachine.instance.GetCurrentTime () < 0f) {
 			GameManager.instance.ChangeToNewState (GameState.GAME_OVER);
 			StopCoroutine ("TimeUpdate");
+		} else {
+			StartCoroutine ("TimeUpdate", timeUpdateAmount);
 		}
-		StartCoroutine ("TimeUpdate",timeUpdateAmount);
 	}
 
 

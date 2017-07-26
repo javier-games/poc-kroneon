@@ -113,9 +113,9 @@ GameObject:
   - component: {fileID: 136772864414268012}
   - component: {fileID: 23086803348862018}
   - component: {fileID: 114188967987785018}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FieldOfView
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
