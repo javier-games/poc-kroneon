@@ -73,7 +73,7 @@ ModelImporter:
     13700002: Cube.006_MeshPart1
     13700004: Cube.006_MeshPart2
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:

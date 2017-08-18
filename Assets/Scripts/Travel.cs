@@ -8,7 +8,7 @@ public class Travel{
 
 	//Variables
 
-	private List<Action> 	actionList;			//	List to store actions
+	private List<Activity> 	actionList;			//	List to store actions
 	private float			startTime = 0;		//	Start time
 	private int 			index	= 0;		//	Index of the current time
 
@@ -16,13 +16,13 @@ public class Travel{
 	// Constructor - Initialization
 
 	public Travel(){
-		actionList = new List<Action> ();
+		actionList = new List<Activity> ();
 	}
 		
-	public Action GetAction(){
+	public Activity GetAction(){
 		return actionList [index];
 	}
-	public Action GetAction(int i){
+	public Activity GetAction(int i){
 		return actionList [i];
 	}
 	public float GetStartTime(){
@@ -38,10 +38,10 @@ public class Travel{
 	//	Methods
 
 	public void AddAction( Vector3 pos, float currentTime){
-		actionList.Add (new Action(pos,currentTime-startTime));
+		actionList.Add (new Activity(pos,currentTime-startTime));
 	}
 	public void AddAction( Vector3 pos, float currentTime,bool activator){
-		actionList.Add (new Action(pos,currentTime));
+		actionList.Add (new Activity(pos,currentTime));
 	}
 
 	public bool TimeToSetDestination(float currentTime){
@@ -58,7 +58,7 @@ public class Travel{
 
 	public void ShowList(){
 		Debug.Log ("----------------------------------");
-		foreach(Action action in actionList){
+		foreach(Activity action in actionList){
 			action.PrintAction ();
 		}
 	}

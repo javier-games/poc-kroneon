@@ -7,8 +7,6 @@ public class UIManager : MonoBehaviour {
 
 	public static UIManager instance;
 
-
-
 	[SerializeField]
 	private GameObject hudPanel;
 	[SerializeField]
@@ -19,6 +17,10 @@ public class UIManager : MonoBehaviour {
 	private GameObject startPanel;
 	[SerializeField]
 	private GameObject winPanel;
+	[SerializeField]
+	private string menuSceneName;
+	[SerializeField]
+	private string nextLevel;
 
 
 
@@ -26,12 +28,8 @@ public class UIManager : MonoBehaviour {
 		instance = this;
 	}
 	void Start () {
-
 		GameManager.instance.ChangeStateEvent += ShowPanel;
-
-		ClearUI ();
-		startPanel.SetActive (true);
-		Time.timeScale = 0;
+		ReStart ();
 	}
 
 
@@ -69,6 +67,10 @@ public class UIManager : MonoBehaviour {
 		switch (GameManager.instance.currentState) {
 
 		case GameState.START:
+			ClearUI ();
+			startPanel.SetActive (true);
+			Time.timeScale = 0;
+			StartCoroutine (LoadScene(300f,menuSceneName));
 			break;
 
 		case GameState.CUTSCENE:
@@ -76,6 +78,7 @@ public class UIManager : MonoBehaviour {
 			break;
 
 		case GameState.PLAYING:
+			StopAllCoroutines ();
 			ClearUI ();
 			hudPanel.SetActive (true);
 			Time.timeScale = 1;
@@ -93,31 +96,28 @@ public class UIManager : MonoBehaviour {
 		case GameState.GAME_OVER:
 			ClearUI ();
 			gameOverPanel.SetActive (true);
-			StartCoroutine ("LoadScene", 4f);
+			StartCoroutine (LoadScene(4f,SceneManager.GetActiveScene().name));
 			break;
 
 		case GameState.EXIT:
 			Time.timeScale = 1;
 			//This should be an other scene.
-			StartCoroutine ("LoadScene", 0f);
+			StartCoroutine (LoadScene(0f,SceneManager.GetActiveScene().name));
 			break;
 
 		case GameState.RESTART:
-			StartCoroutine ("LoadScene", 0f);
+			StartCoroutine (LoadScene(0f,SceneManager.GetActiveScene().name));
 			break;
 
 		case GameState.WIN:
 			ClearUI ();
 			winPanel.SetActive (true);
-			StartCoroutine ("LoadScene", 4f);
+			StartCoroutine (LoadScene(4f,nextLevel));
 			break;
 		}
 	}
-
-	public IEnumerator LoadScene(float timeToWait){
-		yield return new WaitForSeconds (timeToWait);
-		ClearUI ();
-		ReStart ();
-		SceneManager.LoadScene ("Level01",LoadSceneMode.Single);
+	public IEnumerator LoadScene(float timeToWait,string sceneName){
+		yield return StartCoroutine(CoroutineUtil.WaitForRealSeconds(timeToWait));
+		SceneManager.LoadScene (sceneName,LoadSceneMode.Single);
 	}
 }

@@ -6,10 +6,13 @@ using UnityEngine.Audio;
 public class AudioManager : MonoBehaviour {
 
 	public static AudioManager instance;
-	public AudioSource musicSource;
-	public AudioSource sfxSource;
-	public AudioClip[]	sfxCollection;
-	public AudioMixer mainAudioMixer;
+
+	[SerializeField]
+	private AudioMixer mainAudioMixer;
+	[SerializeField]
+	private AudioSource sourceGUI;
+	[SerializeField]
+	private AudioClip clickClip;
 
 	void Awake(){
 		instance = this;
@@ -17,7 +20,6 @@ public class AudioManager : MonoBehaviour {
 
 	void Start () {
 		GameManager.instance.ChangeStateEvent += GameStateChange;
-		musicSource.Play();
 	}
 
 	void GameStateChange(){
@@ -25,27 +27,21 @@ public class AudioManager : MonoBehaviour {
 		case GameState.PLAYING:
 			break;
 		case GameState.PAUSE:
-			musicSource.mute = true;
 			break;
 		case GameState.CONTINUE:
-			musicSource.mute = false;
 			break;
 		case GameState.GAME_OVER:
-			musicSource.Stop ();
 			break;
 		}
 	}
-
-	public void playShot(){
-		sfxSource.PlayOneShot (sfxCollection[0]);
-	}
-	public void PlayWave(){
-		sfxSource.PlayOneShot (sfxCollection[1]);
-	}
+		
 	public void SetSfxGroupVolume(float volume){
-		mainAudioMixer.SetFloat ("SoundFXVolume",volume);
+		mainAudioMixer.SetFloat ("SFXVolume",volume);
 	}
 	public void SetMusicGroupVolume(float volume){
 		mainAudioMixer.SetFloat ("MusicVolume",volume);
+	}
+	public void ClickSFX(){
+		sourceGUI.PlayOneShot (clickClip);
 	}
 }

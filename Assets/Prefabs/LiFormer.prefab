@@ -435,7 +435,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1845672696504328
 GameObject:
   m_ObjectHideFlags: 1
@@ -1071,8 +1071,8 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
-  m_Range: 10
+  m_Intensity: 0.34
+  m_Range: 16.04
   m_SpotAngle: 46
   m_CookieSize: 10
   m_Shadows:
@@ -1092,7 +1092,7 @@ Light:
     m_Bits: 4294967295
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -1232,8 +1232,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: eecc6b6a23d514d08bbc2469fa8c6db3, type: 3}
   - {fileID: 8300000, guid: 2d52f86a59cb84972b7d7e090773cb92, type: 3}
   - {fileID: 8300000, guid: 260fc1ae70527486db251f0bd478555f, type: 3}
-  jumpSound: {fileID: 0}
-  crouching: {fileID: 0}
 --- !u!114 &114869026774799510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1289,7 +1287,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 79fcf4a1b0dec4347a9e3f2dab6f69d1, type: 2}
+  - {fileID: 2100000, guid: 63f27203f20444ff1bf5191052c485af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

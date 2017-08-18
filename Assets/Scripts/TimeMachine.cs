@@ -36,6 +36,14 @@ public class TimeMachine : MonoBehaviour {
 	private float currentTime 	= 0f;
 	private float initialTime 	= 0f;
 
+	[SerializeField]
+	private AudioClip travelClip;
+	[SerializeField]
+	private AudioClip openDoorClip;
+	[SerializeField]
+	private AudioClip closeDoorClip;
+
+	private AudioSource source;
 
 
 	//	Initialization
@@ -50,6 +58,7 @@ public class TimeMachine : MonoBehaviour {
 		travelList.Add (new Travel());
 		formerList = new List<Transform> ();
 		animator = GetComponent<Animator> ();
+		source = GetComponent<AudioSource> ();
 		initialTime = Time.time;
 	}
 
@@ -113,10 +122,13 @@ public class TimeMachine : MonoBehaviour {
 			travelList [index].AddAction (traveller.position,0f,true);
 			travelList [index].AddAction (traveller.GetComponent<PickingController>().GetDestination(),0.01f,true);
 			animator.SetTrigger ("Close");
+			source.PlayOneShot (closeDoorClip);
 		}
 	}
 	public void TimeTravel(){
 		if (state == MachineState.Ready && LevelManager.instance.GetTravelCount()>0) {
+
+			source.PlayOneShot (travelClip);
 
 			LevelManager.instance.DecreaseTravelCount ();
 
@@ -154,6 +166,7 @@ public class TimeMachine : MonoBehaviour {
 			Enable (formerList[i]);
 		}
 		animator.SetTrigger ("Open");
+		source.PlayOneShot (openDoorClip);
 
 		LevelManager.instance.DecreaseGameTime (travelList[index-1].GetStartTime());
 	}
@@ -166,7 +179,9 @@ public class TimeMachine : MonoBehaviour {
 		//Debug.Log ("New timemiche state: " + state);
 	}
 
-
+	public void PlayOpenDoorSound(){
+		source.PlayOneShot (openDoorClip);
+	}
 
 	//	Get Methods
 
