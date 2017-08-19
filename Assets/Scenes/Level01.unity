@@ -625,6 +625,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114068356845344438, guid: 85d7797034e1b4078837fe35f7aff02b,
+        type: 2}
+      propertyPath: cursorIdle
+      value: 
+      objectReference: {fileID: 2800000, guid: f7025baa91da943d4b93f43d5077ada6, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 85d7797034e1b4078837fe35f7aff02b, type: 2}
   m_IsPrefabParent: 0
@@ -2953,6 +2958,7 @@ GameObject:
   - component: {fileID: 2038374779}
   - component: {fileID: 2038374778}
   - component: {fileID: 2038374777}
+  - component: {fileID: 2038374782}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -3031,6 +3037,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2038374782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2038374776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7af8b57d27564b01b12191a909d4e2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorIdle: {fileID: 2800000, guid: f7025baa91da943d4b93f43d5077ada6, type: 3}
+  cursorDown: {fileID: 2800000, guid: 206e1bfec0a334efa895cd3dd6ec34d8, type: 3}
+  hotSpot: {x: 0, y: 0}
+  cursorMode: 0
 --- !u!1001 &2052106359
 Prefab:
   m_ObjectHideFlags: 0

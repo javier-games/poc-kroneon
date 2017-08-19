@@ -35,14 +35,15 @@ public class GUIManager : MonoBehaviour {
 	private string firstLavelName;
 	[SerializeField]
 	private float splashDuration;
-	[SerializeField][Range(0f,1f)]
-	private float transitionPercent;
 	[SerializeField]
 	private float videoWaitingTime;
+	[SerializeField][Range(0f,0.5f)]
+	private float transitionPercent;
 	[SerializeField]
-	private float speed = 0.01f;
+	private float transitionStepTime = 0.1f;
 
 	private float speedTransition;
+	private Color tempColor;
 
 
 	void Awake(){
@@ -51,12 +52,13 @@ public class GUIManager : MonoBehaviour {
 	}
 
 	void Start(){
-		transition.gameObject.SetActive (true);
-		transition.color = Color.white;
+
+		tempColor = transition.color;
+
 		ClearUI ();
-		speedTransition = speed;
+
 		ChangeToNewState (GUIState.SPLASH);
-		transition.color = new Color (transition.color.r,transition.color.g,transition.color.b,1f);
+
 	}
 
 	public void ChangeToNewState(GUIState newState){
@@ -95,9 +97,31 @@ public class GUIManager : MonoBehaviour {
 	}
 
 
-	IEnumerator SetSense(float timeToWait){
-		yield return StartCoroutine(CoroutineUtil.WaitForRealSeconds(timeToWait));
-		speedTransition = speedTransition * -1f;
+	IEnumerator StartTransition(float duration, float sense, bool setSense){
+		
+		if (sense > 0f) 
+			yield return StartCoroutine(CoroutineUtil.WaitForRealSeconds( duration*(1f-transitionPercent) ));
+		
+		transition.gameObject.SetActive (true);
+		tempColor = Color.white;
+
+		if (sense > 0f) 
+			tempColor.a = 0f;
+		
+		transition.color = tempColor;
+		StartCoroutine (Transition (2f*sense*transitionStepTime/(duration*transitionPercent)) );
+
+		if (sense < 0f && setSense)
+			StartCoroutine ( StartTransition(duration,1f,false) );
+
+	}
+	IEnumerator Transition(float increment){
+		yield return StartCoroutine(CoroutineUtil.WaitForRealSeconds(transitionStepTime));
+		tempColor.a += increment;
+		transition.color = tempColor;
+		if ( (increment > 0f && tempColor.a < 1f) || (increment < 0f && tempColor.a > 0f)){
+			StartCoroutine (Transition (increment));
+		}
 	}
 	IEnumerator LoadScene(float timeToWait,string levelName){
 		yield return StartCoroutine(CoroutineUtil.WaitForRealSeconds(timeToWait));
@@ -114,62 +138,68 @@ public class GUIManager : MonoBehaviour {
 		switch (currentState) {
 
 		case GUIState.SPLASH:
-			speedTransition = speed;
-
-			transition.color = new Color (transition.color.r,transition.color.g,transition.color.b,1f);
+			
 			ClearUI ();
-			speedTransition = speedTransition * -1f;
 			splashPanel.SetActive (true);
 			StartCoroutine (ScheduleState (splashDuration, GUIState.SPONSORS));
-			StartCoroutine (SetSense (splashDuration*(1f-transitionPercent)));
+			StartCoroutine ( StartTransition(splashDuration,-1f,true) );
+
 			break;
 
 		case GUIState.SPONSORS:
-			speedTransition = speedTransition * -1f;
+			
 			ClearUI ();
 			sponsorsPanel.SetActive (true);
-			StartCoroutine ( ScheduleState(splashDuration,GUIState.TITLE) );
-			StartCoroutine (SetSense (splashDuration*(1f-transitionPercent)));
+			StartCoroutine ( ScheduleState (splashDuration,GUIState.TITLE) );
+			StartCoroutine ( StartTransition(splashDuration,-1f,true) );
+
 			break;
 
 		case GUIState.TITLE:
-			speedTransition = speedTransition * -1f;
+			
 			ClearUI ();
 			titlePanel.SetActive (true);
-			StartCoroutine ( ScheduleState(splashDuration*1.2f,GUIState.MENU) );
-			StartCoroutine (SetSense (splashDuration*1.2f*(1f-transitionPercent)));
+			StartCoroutine ( ScheduleState (splashDuration,GUIState.MENU) );
+			StartCoroutine ( StartTransition(1.2f*splashDuration,-1f,true) );
+
 			break;
 
 		case GUIState.MENU:
+			
 			ClearUI ();
-			speedTransition = speedTransition * -1f;
 			menuPanel.SetActive (true);
 			StartCoroutine (ScheduleState(videoWaitingTime,GUIState.VIDEO));
+			StartCoroutine ( StartTransition(splashDuration,-1f,false) );
+
 			break;
 
 		case GUIState.CONTROLS:
+			
 			ClearUI ();
 			controlsPanel.SetActive (true);
-			//StopAllCoroutines ();
+
 			break;
 
 		case GUIState.CREDITS:
+			
 			ClearUI ();
 			creditsPanel.SetActive (true);
-			//StopAllCoroutines ();
+
 			break;
 
 		case GUIState.VIDEO:
+			
 			ClearUI ();
 			videoPanel.SetActive (true);
 			StopAllCoroutines ();
+
 			break;
 
 		case GUIState.LOADING:
+			
 			ClearUI ();
-			transition.color = new Color (transition.color.r,transition.color.g,transition.color.b,0f);
-			speedTransition = speed;
 			StartCoroutine (LoadScene(3f,firstLavelName));
+
 			break;
 
 		}
@@ -177,12 +207,9 @@ public class GUIManager : MonoBehaviour {
 
 
 	void Update(){
-		if (Input.GetKeyDown (KeyCode.R) && (currentState == GUIState.VIDEO)) {
-			//speedTransition = -speed;
-			//transition.color = new Color (transition.color.r,transition.color.g,transition.color.b,1f);
-			Splash ();
+		if (Input.GetKeyDown (KeyCode.R) && (currentState == GUIState.VIDEO || currentState == GUIState.CREDITS || currentState == GUIState.CONTROLS)) {
+			Menu ();
 		}
-		transition.color = new Color (transition.color.r,transition.color.g,transition.color.b,transition.color.a+speedTransition);
 	}
 
 }

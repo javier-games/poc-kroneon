@@ -1282,6 +1282,7 @@ GameObject:
   - component: {fileID: 1282641879}
   - component: {fileID: 1282641876}
   - component: {fileID: 1282641880}
+  - component: {fileID: 1282641881}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -1360,6 +1361,21 @@ MonoBehaviour:
   mainAudioMixer: {fileID: 24100000, guid: 469c308e7d10e40dba8b283b5808748a, type: 2}
   sourceGUI: {fileID: 1038817433}
   clickClip: {fileID: 8300000, guid: c305ffc0623464fdb988240adbf685da, type: 3}
+--- !u!114 &1282641881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1282641875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7af8b57d27564b01b12191a909d4e2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorIdle: {fileID: 2800000, guid: f7025baa91da943d4b93f43d5077ada6, type: 3}
+  cursorDown: {fileID: 2800000, guid: 206e1bfec0a334efa895cd3dd6ec34d8, type: 3}
+  hotSpot: {x: 0, y: 0}
+  cursorMode: 0
 --- !u!1001 &1292445784
 Prefab:
   m_ObjectHideFlags: 0
