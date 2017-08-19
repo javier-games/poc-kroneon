@@ -3050,7 +3050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorIdle: {fileID: 2800000, guid: f7025baa91da943d4b93f43d5077ada6, type: 3}
   cursorDown: {fileID: 2800000, guid: 206e1bfec0a334efa895cd3dd6ec34d8, type: 3}
-  hotSpot: {x: 0, y: 0}
+  hotSpot: {x: 13, y: 19}
   cursorMode: 0
 --- !u!1001 &2052106359
 Prefab:
