@@ -367,10 +367,6 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1337934043}
-    - target: {fileID: 4545704518817880, guid: 85d7797034e1b4078837fe35f7aff02b, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 157.231
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 85d7797034e1b4078837fe35f7aff02b, type: 2}
   m_IsPrefabParent: 0

@@ -6,6 +6,8 @@ public class PickingController: MonoBehaviour {
 
 	[SerializeField]
 	private float minDistanceToTarget = 0.2f;
+	[SerializeField]
+	private GameObject destinyPrefab;
 
 
 	private NavMeshAgent agent;
@@ -15,6 +17,7 @@ public class PickingController: MonoBehaviour {
 	private Movement movement;
 	private Vector3 lastPosition;
 	private bool movementActive = true;
+	private ParticleSystem destiny;
 
 
 
@@ -22,6 +25,9 @@ public class PickingController: MonoBehaviour {
 		
 		agent = GetComponent<NavMeshAgent>();
 		movement = GetComponent<Movement> ();
+
+		destiny = Instantiate (destinyPrefab).GetComponent<ParticleSystem>();
+		destiny.transform.position = transform.position;
 
 		position = transform.position;
 		rotation = transform.rotation;
@@ -51,6 +57,8 @@ public class PickingController: MonoBehaviour {
 				if (Physics.Raycast (Camera.main.ScreenPointToRay (Input.mousePosition), out mouseHit)) {
 					agent.SetDestination (mouseHit.point);
 					TimeMachine.instance.AddActionAt (mouseHit.point);
+					destiny.transform.position = mouseHit.point;
+					destiny.Play ();
 				}
 			}
 			if (Input.GetKeyDown (KeyCode.Space)) {
