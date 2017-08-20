@@ -6,6 +6,8 @@ public class GoalTrigger : MonoBehaviour {
 
 	[SerializeField]
 	private AudioClip winClip;
+	[SerializeField]
+	private float delayTime;
 
 	private AudioSource source;
 
@@ -15,8 +17,13 @@ public class GoalTrigger : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "Player" || other.tag == "Respawn") {
-			GameManager.instance.ChangeToNewState (GameState.WIN);
-			source.PlayOneShot (winClip);
+			StartCoroutine (ChangeState(delayTime));
 		}
+	}
+
+	IEnumerator ChangeState(float timeToWait){
+		yield return new WaitForSeconds (timeToWait);
+		GameManager.instance.ChangeToNewState (GameState.WIN);
+		source.PlayOneShot (winClip);
 	}
 }
