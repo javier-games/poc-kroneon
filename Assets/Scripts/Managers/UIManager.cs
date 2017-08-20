@@ -29,7 +29,7 @@ public class UIManager : MonoBehaviour {
 	}
 	void Start () {
 		GameManager.instance.ChangeStateEvent += ShowPanel;
-		ReStart ();
+		StartScene ();
 	}
 
 
@@ -57,8 +57,14 @@ public class UIManager : MonoBehaviour {
 	public void Exit(){
 		GameManager.instance.ChangeToNewState (GameState.EXIT);
 	}
-	public void ReStart(){
+	public void StartScene(){
 		GameManager.instance.ChangeToNewState (GameState.START);
+	}
+	public void ReStart(){
+		GameManager.instance.ChangeToNewState (GameState.RESTART);
+	}
+	public void NextLevel(){
+		StartCoroutine (LoadScene(0f,nextLevel));
 	}
 
 
@@ -94,15 +100,16 @@ public class UIManager : MonoBehaviour {
 			break;
 
 		case GameState.GAME_OVER:
+			Time.timeScale = 0;
 			ClearUI ();
 			gameOverPanel.SetActive (true);
-			StartCoroutine (LoadScene(4f,SceneManager.GetActiveScene().name));
+			StartCoroutine (LoadScene(60f,menuSceneName));
 			break;
 
 		case GameState.EXIT:
 			Time.timeScale = 1;
 			//This should be an other scene.
-			StartCoroutine (LoadScene(0f,SceneManager.GetActiveScene().name));
+			StartCoroutine (LoadScene(0f,menuSceneName));
 			break;
 
 		case GameState.RESTART:
@@ -110,9 +117,10 @@ public class UIManager : MonoBehaviour {
 			break;
 
 		case GameState.WIN:
+			Time.timeScale = 0;
 			ClearUI ();
 			winPanel.SetActive (true);
-			StartCoroutine (LoadScene(4f,nextLevel));
+			StartCoroutine (LoadScene(60f,menuSceneName));
 			break;
 		}
 	}
