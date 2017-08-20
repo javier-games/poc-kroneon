@@ -982,6 +982,8 @@ MonoBehaviour:
   minDistanceToTarget: 0.1
   destinyPrefab: {fileID: 1785210597586862, guid: 5cd64b223316a4061a0729003b08a65a,
     type: 2}
+  balloon: {fileID: 1022228972143164}
+  messageDuration: 3
 --- !u!114 &114083458793938976
 MonoBehaviour:
   m_ObjectHideFlags: 1

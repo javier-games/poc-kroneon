@@ -1,5 +1,7 @@
 ﻿using UnityEngine.AI;
 using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
 
 [RequireComponent(typeof(Movement))]
 public class PickingController: MonoBehaviour {
@@ -8,6 +10,10 @@ public class PickingController: MonoBehaviour {
 	private float minDistanceToTarget = 0.2f;
 	[SerializeField]
 	private GameObject destinyPrefab;
+	[SerializeField]
+	private GameObject balloon;
+	[SerializeField]
+	private float messageDuration;
 
 
 	private NavMeshAgent agent;
@@ -18,6 +24,7 @@ public class PickingController: MonoBehaviour {
 	private Vector3 lastPosition;
 	private bool movementActive = true;
 	private ParticleSystem destiny;
+	private bool canTravel = true;
 
 
 
@@ -61,8 +68,14 @@ public class PickingController: MonoBehaviour {
 					destiny.Play ();
 				}
 			}
-			if (Input.GetKeyDown (KeyCode.Space)) {
-				TimeMachine.instance.TimeTravel ();
+			if (canTravel) {
+				if (Input.GetKeyDown (KeyCode.Space)) {
+					TimeMachine.instance.TimeTravel ();
+				}
+			} else if (Input.GetKeyDown (KeyCode.Space)) {
+				balloon.SetActive (true);
+				balloon.transform.GetChild (0).GetComponent<Text> ().text = "No debo estar sobre el switch para viajar";
+				StartCoroutine (CloseMessage(messageDuration));
 			}
 		}
 	}
@@ -90,6 +103,14 @@ public class PickingController: MonoBehaviour {
 	}
 	public Vector3 GetDestination(){
 		return agent.destination;
+	}
+	public void SetCanTravel(bool newCanTravel){
+		canTravel = newCanTravel;
+	}
+	IEnumerator CloseMessage(float timeToWait){
+		yield return new WaitForSeconds (timeToWait);
+		balloon.transform.GetChild (0).GetComponent<Text> ().text = "";
+		balloon.SetActive (false);
 	}
 
 }

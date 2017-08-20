@@ -23,6 +23,8 @@ public class Switch : MonoBehaviour {
 			pressed = true;
 			animator.SetBool ("Pushed",true);
 			source.PlayOneShot (pushClip);
+			if(other.GetComponent<PickingController> ())
+				other.GetComponent<PickingController> ().SetCanTravel (false);
 		}
 	}
 
@@ -37,6 +39,8 @@ public class Switch : MonoBehaviour {
 			pressed = false;
 			animator.SetBool ("Pushed",false);
 			source.PlayOneShot (releaseClip);
+			if(other.GetComponent<PickingController> ())
+				other.GetComponent<PickingController> ().SetCanTravel (true);
 		}
 	}
 
