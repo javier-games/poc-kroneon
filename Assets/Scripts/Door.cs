@@ -10,7 +10,7 @@ public class Door : MonoBehaviour {
 	[SerializeField]
 	private float speed = 0.2f;
 	[SerializeField]
-	private float tolerance = 0.05f;
+	private float tolerance = 0.001f;
 	[SerializeField]
 	private bool lockAtFull = false;
 	[SerializeField]
@@ -38,35 +38,31 @@ public class Door : MonoBehaviour {
 
 		if (!locked) {
 			amount = 0;
+
 			for (int i = 0; i < related.Length; i++) {
 				if (related [i].IsPressed ()) {
 					amount += 1f / related.Length;
 				}
 			}
 
-			if (amount != lastAmount)
-				UpdateDestiny ();
+			if (amount != lastAmount) {
+				destinyPosition = Vector3.Lerp (originalPosition, targetPosition, amount);
+				bake = true;
+			}
 
 			lastAmount = amount;
 
-			if ((transform.position - destinyPosition).magnitude > tolerance)
-				transform.position = Vector3.SmoothDamp (transform.position, destinyPosition, ref velocity, speed);
-			else {
-				transform.position = destinyPosition;
+			transform.position = Vector3.SmoothDamp (transform.position, destinyPosition, ref velocity, speed);
+			if (velocity.magnitude < tolerance) {
 				if (bake && NavSurfaceBaker.instance) {
 					source.PlayOneShot (bakeClip);
 					NavSurfaceBaker.instance.Bake ();
 					bake = false;
 					if (lockAtFull && amount >= 1)
 						locked = true;
-				
 				}
+
 			}
 		}
-	}
-
-	public void UpdateDestiny(){
-		destinyPosition = Vector3.Lerp (originalPosition,targetPosition,amount);
-		bake = true;
 	}
 }
