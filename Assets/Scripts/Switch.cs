@@ -20,25 +20,34 @@ public class Switch : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 		if (other.CompareTag ("Player")) {
+			pressed = true;
 			animator.SetBool ("Pushed",true);
 			source.PlayOneShot (pushClip);
 		}
 	}
 
-	void OnTriggerStay(Collider other){
+	/*void OnTriggerStay(Collider other){
 		if (other.CompareTag ("Player")) {
 			pressed = true;
+		}
+	}*/
+
+	void OnTriggerExit(Collider other){
+		if (other.CompareTag ("Player")) {
+			pressed = false;
+			animator.SetBool ("Pushed",false);
+			source.PlayOneShot (releaseClip);
 		}
 	}
 
 	public bool IsPressed(){
-		if (pressed) {
+		/*if (pressed) {
 			pressed = false;
 			return true;
 		} else if(animator.GetBool("Pushed")){
 			animator.SetBool ("Pushed",false);
 			source.PlayOneShot (releaseClip);
-		}
+		}*/
 		return pressed;
 	}
 
