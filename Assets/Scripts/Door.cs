@@ -51,13 +51,16 @@ public class Door : MonoBehaviour {
 
 			if ((transform.position - destinyPosition).magnitude > tolerance)
 				transform.position = Vector3.SmoothDamp (transform.position, destinyPosition, ref velocity, speed);
-			else if (bake && NavSurfaceBaker.instance) {
-				source.PlayOneShot (bakeClip);
-				NavSurfaceBaker.instance.Bake ();
-				bake = false;
-				if (lockAtFull && amount >= 1)
-					locked = true;
+			else {
+				transform.position = destinyPosition;
+				if (bake && NavSurfaceBaker.instance) {
+					source.PlayOneShot (bakeClip);
+					NavSurfaceBaker.instance.Bake ();
+					bake = false;
+					if (lockAtFull && amount >= 1)
+						locked = true;
 				
+				}
 			}
 		}
 
