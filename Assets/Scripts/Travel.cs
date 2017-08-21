@@ -3,17 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 	
 public class Travel{
-
-
-
-	//Variables
-
-	private List<Activity> 	actionList;			//	List to store actions
-	private float			startTime = 0;		//	Start time
-	private int 			index	= 0;		//	Index of the current time
-
-
-	// Constructor - Initialization
+	
+	private List<Activity> 	actionList;
+	private float			startTime = 0;
+	private int 			index	= 0;
 
 	public Travel(){
 		actionList = new List<Activity> ();
@@ -35,7 +28,6 @@ public class Travel{
 		this.startTime = startTime;
 	}
 
-	//	Methods
 
 	public void AddAction( Vector3 pos, float currentTime){
 		actionList.Add (new Activity(pos,currentTime-startTime));
@@ -62,7 +54,4 @@ public class Travel{
 			action.PrintAction ();
 		}
 	}
-
-
-
 }

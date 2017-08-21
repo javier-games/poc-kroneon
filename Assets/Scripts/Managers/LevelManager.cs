@@ -91,14 +91,9 @@ public class LevelManager : MonoBehaviour {
 			StartCoroutine ("TimeUpdate", timeUpdateAmount);
 		}
 	}
-
-
-	//Anouncements
+		
 	private void TimeDidChange(){
-		//Debug.Log("The time has changed to " + gameTime);
 	}
 	private void TravelCountDidChange(){
-		//Debug.Log("The travel count has changed to " + travelCounter);
 	}
-
 }

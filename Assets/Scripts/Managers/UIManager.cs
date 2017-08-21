@@ -22,8 +22,6 @@ public class UIManager : MonoBehaviour {
 	[SerializeField]
 	private string nextLevel;
 
-
-
 	void Awake(){
 		instance = this;
 	}
@@ -32,9 +30,6 @@ public class UIManager : MonoBehaviour {
 		StartScene ();
 	}
 
-
-
-	//	Enable Methods
 	void ClearUI(){
 		hudPanel.SetActive (false);
 		pausePanel.SetActive (false);
@@ -66,8 +61,6 @@ public class UIManager : MonoBehaviour {
 	public void NextLevel(){
 		StartCoroutine (LoadScene(0f,nextLevel));
 	}
-
-
 
 	public void ShowPanel(){
 		switch (GameManager.instance.currentState) {
@@ -122,6 +115,11 @@ public class UIManager : MonoBehaviour {
 			winPanel.SetActive (true);
 			StartCoroutine (LoadScene(60f,menuSceneName));
 			break;
+		}
+	}
+	void Update(){
+		if (Input.GetKeyDown (KeyCode.R)) {
+			StartCoroutine (LoadScene(0f,"Level01"));
 		}
 	}
 	public IEnumerator LoadScene(float timeToWait,string sceneName){

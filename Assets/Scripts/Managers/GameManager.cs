@@ -25,6 +25,5 @@ public class GameManager : MonoBehaviour {
 	}
 
 	private void NewStateEvent(){
-		//Debug.Log ("New game state: "+currentState);
 	}
 }

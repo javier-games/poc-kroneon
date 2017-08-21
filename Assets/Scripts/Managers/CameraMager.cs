@@ -53,6 +53,5 @@ public class CameraMager : MonoBehaviour {
 		case GameState.GAME_OVER:
 			break;
 		}
-
 	}
 }

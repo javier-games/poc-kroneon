@@ -35,11 +35,11 @@ public class GrandpaController : MonoBehaviour {
 			StartCoroutine (CloseMessage(messageDuration,timesResidue));
 		}
 	}
+
 	IEnumerator CloseMessage(float timeToWait,int timesResidue){
 		yield return new WaitForSeconds (timeToWait);
 		balloon.transform.GetChild (0).GetComponent<Text> ().text = "";
 		balloon.SetActive (false);
 		StartCoroutine (OpenMessage(messageDuration,timesResidue-1));
 	}
-
 }

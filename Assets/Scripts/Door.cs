@@ -61,7 +61,6 @@ public class Door : MonoBehaviour {
 					if (lockAtFull && amount >= 1)
 						locked = true;
 				}
-
 			}
 		}
 	}

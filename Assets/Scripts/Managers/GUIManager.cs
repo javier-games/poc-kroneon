@@ -7,8 +7,6 @@ using UnityEngine.UI;
 public enum GUIState{SPLASH, SPONSORS, TITLE, MENU, CREDITS, CONTROLS, LOADING, VIDEO}
 public class GUIManager : MonoBehaviour {
 
-
-
 	public static GUIManager instance;
 	public GUIState currentState;
 
@@ -66,8 +64,6 @@ public class GUIManager : MonoBehaviour {
 		ChangeStateEvent ();
 	}
 
-
-
 	void ClearUI(){
 		splashPanel.SetActive (false);
 		sponsorsPanel.SetActive (false);
@@ -95,7 +91,6 @@ public class GUIManager : MonoBehaviour {
 	public void StartGame(){
 		GUIManager.instance.ChangeToNewState (GUIState.LOADING);
 	}
-
 
 	IEnumerator StartTransition(float duration, float sense, bool setSense){
 		
@@ -131,8 +126,6 @@ public class GUIManager : MonoBehaviour {
 		yield return StartCoroutine(CoroutineUtil.WaitForRealSeconds(timeToWait));
 		ChangeToNewState (state);
 	}
-
-
 
 	public void ShowPanel(){
 		switch (currentState) {
@@ -201,10 +194,8 @@ public class GUIManager : MonoBehaviour {
 			StartCoroutine (LoadScene(3f,firstLavelName));
 
 			break;
-
 		}
 	}
-
 
 	void Update(){
 		if (Input.GetKeyDown (KeyCode.R) && (currentState == GUIState.VIDEO || currentState == GUIState.CREDITS || currentState == GUIState.CONTROLS)) {

@@ -28,12 +28,6 @@ public class Switch : MonoBehaviour {
 		}
 	}
 
-	/*void OnTriggerStay(Collider other){
-		if (other.CompareTag ("Player")) {
-			pressed = true;
-		}
-	}*/
-
 	void OnTriggerExit(Collider other){
 		if (other.CompareTag ("Player")) {
 			pressed = false;
@@ -45,14 +39,6 @@ public class Switch : MonoBehaviour {
 	}
 
 	public bool IsPressed(){
-		/*if (pressed) {
-			pressed = false;
-			return true;
-		} else if(animator.GetBool("Pushed")){
-			animator.SetBool ("Pushed",false);
-			source.PlayOneShot (releaseClip);
-		}*/
 		return pressed;
 	}
-
 }

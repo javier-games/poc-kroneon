@@ -16,8 +16,6 @@ public class FormerController : MonoBehaviour {
 	private Vector3			lastPosition;
 	private bool			movementActive = true;
 
-
-
 	void Start(){
 		agent = GetComponent<NavMeshAgent>();
 		movement = GetComponent<Movement> ();

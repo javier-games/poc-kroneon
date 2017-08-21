@@ -6,7 +6,6 @@ using UnityEngine.UI;
 [RequireComponent(typeof(BoxCollider))]
 public class EventCollider : MonoBehaviour {
 
-
 	[SerializeField]
 	private string message;
 	[SerializeField]
@@ -80,6 +79,4 @@ public class EventCollider : MonoBehaviour {
 		balloon.transform.GetChild (0).GetComponent<Text> ().text = "";
 		balloon.SetActive (false);
 	}
-
-
 }

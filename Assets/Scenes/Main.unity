@@ -573,7 +573,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Contin\xFAe"
+  m_Text: Continuar
 --- !u!222 &201774096
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1526,7 +1526,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Este proyecto se desarrollado con el apoyo de:'
+  m_Text: 'Este proyecto se ha desarrollado con el apoyo de:'
 --- !u!222 &784250957
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1787,7 +1787,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4, y: 0.76}
   m_AnchorMax: {x: 0.73, y: 0.9}
-  m_AnchoredPosition: {x: -183.8, y: -168.8999}
+  m_AnchoredPosition: {x: -183.79997, y: -168.8999}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &979651821

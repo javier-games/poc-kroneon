@@ -15,7 +15,6 @@ public class PickingController: MonoBehaviour {
 	[SerializeField]
 	private float messageDuration;
 
-
 	private NavMeshAgent agent;
 	private RaycastHit mouseHit;
 	private Quaternion rotation;
@@ -25,8 +24,6 @@ public class PickingController: MonoBehaviour {
 	private bool movementActive = true;
 	private ParticleSystem destiny;
 	private bool canTravel = true;
-
-
 
 	void Start(){
 		
@@ -39,7 +36,6 @@ public class PickingController: MonoBehaviour {
 		position = transform.position;
 		rotation = transform.rotation;
 		lastPosition = position;
-
 	}
 
 	void Update (){
