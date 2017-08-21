@@ -26,7 +26,8 @@ public class MainTheme : MonoBehaviour {
 		case GUIState.MENU:
 			audioSource.loop = true;
 			audioSource.volume = 1f;
-			audioSource.Play ();
+			if(!audioSource.isPlaying)
+				audioSource.Play ();
 			break;
 
 		case GUIState.VIDEO:

@@ -707,7 +707,7 @@ MonoBehaviour:
   videoPanel: {fileID: 594446184}
   firstLavelName: Level01
   splashDuration: 6
-  videoWaitingTime: 10
+  videoWaitingTime: 300
   transitionPercent: 0.3
   transitionStepTime: 0.05
 --- !u!114 &276952615
@@ -1117,7 +1117,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2954e2cd68ee44d5d94139b11a46d88d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 653f6c7763caf40ba8497355e937fe54, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1322,7 +1322,6 @@ GameObject:
   - component: {fileID: 640845122}
   - component: {fileID: 640845121}
   - component: {fileID: 640845120}
-  - component: {fileID: 640845125}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1400,18 +1399,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &640845125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 640845119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: 45859a39b334f44b7aad607695bc5ae4, type: 2}
 --- !u!1 &687996664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1448,7 +1435,7 @@ VideoPlayer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 687996664}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 8ff9ae94da41746ccb2db8a9939a0f60, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 5d322772a6639439cb089b977bfd4940, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera: {fileID: 640845123}
   m_TargetTexture: {fileID: 0}
@@ -1800,7 +1787,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4, y: 0.76}
   m_AnchorMax: {x: 0.73, y: 0.9}
-  m_AnchoredPosition: {x: -183.8, y: -168.9}
+  m_AnchoredPosition: {x: -183.8, y: -168.8999}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &979651821
@@ -2022,7 +2009,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.1, y: 0.58000004}
   m_AnchorMax: {x: 0.56, y: 0.78000003}
-  m_AnchoredPosition: {x: 0, y: -140.1}
+  m_AnchoredPosition: {x: 0, y: -140.09985}
   m_SizeDelta: {x: 0, y: 77.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1172321412
@@ -2977,7 +2964,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4, y: 0.76}
   m_AnchorMax: {x: 0.73, y: 0.9}
-  m_AnchoredPosition: {x: 80.20001, y: -168.9}
+  m_AnchoredPosition: {x: 80.19995, y: -168.8999}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1539315210
@@ -3012,7 +2999,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.7
-  m_Text: "S\xE1nchez Basoco Guillermo\nDise\xF1o de Audio y Programaci\xF3n"
+  m_Text: "S\xE1nchez Basoco Guillermo\nM\xFAsica y Programaci\xF3n"
 --- !u!222 &1539315211
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3051,7 +3038,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4, y: 0.76}
   m_AnchorMax: {x: 0.73, y: 0.9}
-  m_AnchoredPosition: {x: -52.000008, y: -73}
+  m_AnchoredPosition: {x: -52, y: -73}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1667374475
