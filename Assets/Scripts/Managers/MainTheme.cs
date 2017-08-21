@@ -23,7 +23,7 @@ public class MainTheme : MonoBehaviour {
 
 	public void ChangeState(){
 		switch (GUIManager.instance.currentState) {
-		case GUIState.SPLASH:
+		case GUIState.MENU:
 			audioSource.loop = true;
 			audioSource.volume = 1f;
 			audioSource.Play ();

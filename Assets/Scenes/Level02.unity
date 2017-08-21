@@ -1625,7 +1625,7 @@ VideoPlayer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 535686235}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 04a023e7d5013450e9bfd027ab18f401, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 1729d831806794750a84dfd1ecc4f69d, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera: {fileID: 1337934043}
   m_TargetTexture: {fileID: 0}
@@ -1635,7 +1635,7 @@ VideoPlayer:
   m_AspectRatio: 5
   m_DataSource: 0
   m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
+  m_AudioOutputMode: 1
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
@@ -1661,6 +1661,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 535686237}
+  source: {fileID: 1414225180}
+  clip: {fileID: 8300000, guid: a9523eb5d88b64caf94ebe845e17eddf, type: 3}
 --- !u!114 &555020903 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114672203639395048, guid: cdc75d11f1cad44039a9b061d26f0bf7,

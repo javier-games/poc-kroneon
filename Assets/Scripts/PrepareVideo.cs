@@ -7,22 +7,27 @@ public class PrepareVideo : MonoBehaviour {
 
 	[SerializeField]
 	private VideoPlayer videoPlayer;
+	[SerializeField]
+	private AudioSource source;
+	[SerializeField]
+	private AudioClip clip;
 
 	void Start () {
 		videoPlayer.Prepare ();
 		StartCoroutine( PlayVideo ());
 	}
-		IEnumerator PlayVideo(){
+
+	IEnumerator PlayVideo(){
 		videoPlayer.Prepare();
-		Debug.Log ("no play");
 		while (!videoPlayer.isPrepared)
 			yield return null;
 		
 		videoPlayer.Play();
-		Debug.Log ("play");
+		source.PlayOneShot (clip);
+
 		while (videoPlayer.isPlaying)
 			yield return null;
+		
 		transform.gameObject.SetActive (false);
-		Debug.Log ("stop");
 	}
 }

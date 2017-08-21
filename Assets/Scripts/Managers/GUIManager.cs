@@ -168,8 +168,8 @@ public class GUIManager : MonoBehaviour {
 			
 			ClearUI ();
 			menuPanel.SetActive (true);
-			StartCoroutine (ScheduleState(videoWaitingTime,GUIState.VIDEO));
-			StartCoroutine ( StartTransition(splashDuration,-1f,false) );
+			StartCoroutine (ScheduleState (videoWaitingTime, GUIState.VIDEO));
+			StartCoroutine (StartTransition (splashDuration, -1f, false));
 
 			break;
 
