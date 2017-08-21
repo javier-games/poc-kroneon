@@ -34,7 +34,7 @@ public class EventCollider : MonoBehaviour {
 
 			if (messageDelay > 0f)
 				StartCoroutine (SendMessage (messageDelay));
-			else {
+			else if( message!= "" ){
 				balloon.SetActive (true);
 				balloon.transform.GetChild (0).GetComponent<Text> ().text = message;
 			}
@@ -47,7 +47,7 @@ public class EventCollider : MonoBehaviour {
 				}
 			}
 
-			if(messageDuration>0f)
+			if(messageDuration>0f && message != "" )
 				StartCoroutine (CloseMessage( messageDuration+messageDelay ) );
 			
 		} else {
@@ -57,8 +57,10 @@ public class EventCollider : MonoBehaviour {
 
 	void OnTriggerExit(Collider other){
 		if (other.CompareTag (tagName) && messageDuration<=0 ) {
-			balloon.transform.GetChild (0).GetComponent<Text> ().text = "";
-			balloon.SetActive (false);
+			if (message != "") {
+				balloon.transform.GetChild (0).GetComponent<Text> ().text = "";
+				balloon.SetActive (false);
+			}
 		}
 	}
 

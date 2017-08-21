@@ -2202,6 +2202,7 @@ MonoBehaviour:
   balloon: {fileID: 78937507}
   messageDuration: 2
   times: 2
+  lookAt: 1
 --- !u!136 &470599932
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3129,13 +3130,14 @@ GameObject:
   m_Component:
   - component: {fileID: 725986408}
   - component: {fileID: 725986409}
+  - component: {fileID: 725986410}
   m_Layer: 0
   m_Name: Video Intro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &725986408
 Transform:
   m_ObjectHideFlags: 0
@@ -3158,17 +3160,17 @@ VideoPlayer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 725986407}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: cb12caa97ee4740adb706c6f13e717c4, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 1729d831806794750a84dfd1ecc4f69d, type: 3}
   m_TargetCameraAlpha: 1
-  m_TargetCamera: {fileID: 0}
+  m_TargetCamera: {fileID: 1683498299}
   m_TargetTexture: {fileID: 0}
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: _MainTex
   m_RenderMode: 1
-  m_AspectRatio: 2
+  m_AspectRatio: 5
   m_DataSource: 0
   m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
+  m_AudioOutputMode: 1
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
@@ -3177,11 +3179,25 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
-  m_Looping: 1
+  m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
+--- !u!114 &725986410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 725986407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90554d74f8fa54b328761d7dc3b1bd1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoPlayer: {fileID: 725986409}
+  source: {fileID: 1666210724}
+  clip: {fileID: 8300000, guid: a9523eb5d88b64caf94ebe845e17eddf, type: 3}
 --- !u!1001 &733830039
 Prefab:
   m_ObjectHideFlags: 0
@@ -8919,7 +8935,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.35, y: 0.45}
   m_AnchorMax: {x: 0.65, y: 0.45}
-  m_AnchoredPosition: {x: 0, y: 25.9906}
+  m_AnchoredPosition: {x: 0, y: 25.990593}
   m_SizeDelta: {x: 168, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1448088752

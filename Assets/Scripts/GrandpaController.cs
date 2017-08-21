@@ -15,13 +15,16 @@ public class GrandpaController : MonoBehaviour {
 	private float messageDuration;
 	[SerializeField]
 	private int times;
+	[SerializeField]
+	private bool lookAt = true;
 
 	void Start () {
 		StartCoroutine (OpenMessage(messageDuration,times));
 	}
 
 	void Update () {
-		transform.LookAt (target);
+		if(lookAt)
+			transform.LookAt (target);
 	}
 
 	IEnumerator OpenMessage(float timeToWait,int timesResidue){
