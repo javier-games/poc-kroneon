@@ -773,12 +773,17 @@ Prefab:
     - target: {fileID: 114907569448121286, guid: 0f060ed0e22bc4bf6bcc104d95d64928,
         type: 2}
       propertyPath: tolerance
-      value: 0.001
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 114907569448121286, guid: 0f060ed0e22bc4bf6bcc104d95d64928,
         type: 2}
       propertyPath: targetPosition.y
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114907569448121286, guid: 0f060ed0e22bc4bf6bcc104d95d64928,
+        type: 2}
+      propertyPath: bakeClip
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f060ed0e22bc4bf6bcc104d95d64928, type: 2}
@@ -2874,7 +2879,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 3
+  m_Text: 0
 --- !u!222 &618681538
 CanvasRenderer:
   m_ObjectHideFlags: 0

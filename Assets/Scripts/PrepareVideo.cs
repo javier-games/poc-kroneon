@@ -13,8 +13,12 @@ public class PrepareVideo : MonoBehaviour {
 	private AudioClip clip;
 
 	void Start () {
-		videoPlayer.Prepare ();
 		StartCoroutine( PlayVideo ());
+	}
+
+	IEnumerator StopVideo(){
+		yield return new WaitForSeconds((float)videoPlayer.clip.length);
+		videoPlayer.transform.gameObject.SetActive (false);
 	}
 
 	IEnumerator PlayVideo(){
