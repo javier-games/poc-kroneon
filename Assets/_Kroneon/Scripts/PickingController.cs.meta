@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2708bd1e1a41f4daea5b7626e120e24e
+timeCreated: 1503120630
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - destinyPrefab: {fileID: 1785210597586862, guid: 5cd64b223316a4061a0729003b08a65a,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
