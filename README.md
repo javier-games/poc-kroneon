@@ -83,7 +83,7 @@ To set up and run the Króneon game project, follow these steps:
 
 # Game Installation
 
-1. Download the installer for Mac or Windows from the [itch.io](https://javier-games.itch.io/cafre) official site.
+1. Download the installer for Mac or Windows from the [itch.io](https://javier-games.itch.io/kroneon) official site.
 2. Once the download is complete, open the installer file.
 3. Follow the on-screen instructions to install Króneon on your computer.
 4. After installation is complete, launch the game.
